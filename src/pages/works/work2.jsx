@@ -61,7 +61,7 @@ const work2 = () => {
 
                 </div>
                 <div className="other_project">
-                    <a href={`/reto`} className="go_back">
+                    <a href={`/portfolio/reto`} className="go_back">
                         <div className="wrap">
                             <p>上一篇</p>
                             <h2>RETO旅藤-行程規畫器 </h2>
@@ -70,7 +70,7 @@ const work2 = () => {
                         <figure><img src={RETO} alt="" /></figure>
 
                     </a>
-                    <a href={`/vote`} className="next">
+                    <a href={`/portfolio/vote`} className="next">
                         <div className="wrap">
                             <p>下一篇</p>
                             <h2>總統開票地圖 </h2>

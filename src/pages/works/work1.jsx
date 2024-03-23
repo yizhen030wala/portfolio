@@ -138,7 +138,7 @@ const work1 = () => {
 
                 </div>
                 <div className="other_project">
-                    <a href={`/rallway`} className="next">
+                    <a href={`/portfolio/rallway`} className="next">
                         <div className="wrap">
                             <p>下一篇</p>
                             <h2>台鐵列車動態 redesign </h2>

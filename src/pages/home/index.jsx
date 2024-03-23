@@ -31,7 +31,7 @@ const index = () => {
               </figure>
             </div>
             <div className="btn_wrap">
-              <a className="btn_black" href={`/about`}>關於我</a>
+              <a className="btn_black" href={`/portfolio/about`}>關於我</a>
               <a className="btn_white" href='https://drive.google.com/file/d/1yqwU2URFxbTO7FR5rEQI93hwR_yQrsZ4/view?usp=sharing' target='_blank'>下載履歷 <img src={Download} alt="" /></a>
             </div>
           </div>
@@ -43,7 +43,7 @@ const index = () => {
 
           <div className="container">
             {/* one */}
-            <a href={`/reto`}>
+            <a href={`/portfolio/reto`}>
               <div className="card">
                 <div className="left"><img src={RETO} alt="" /></div>
                 <div className="right">
@@ -60,13 +60,13 @@ const index = () => {
                       <div className="tag">團隊溝通</div>
                     </div>
                   </div>
-                  <a className="info_btn" href={`/reto`}>了解更多細節</a>
+                  <a className="info_btn" href={`/portfolio/reto`}>了解更多細節</a>
                 </div>
               </div>
             </a>
 
             {/* two */}
-            <a href={`/rallway`}>
+            <a href={`/portfolio/rallway`}>
               <div className="card">
                 <div className="left"><img src={Rallway} alt="" /></div>
                 <div className="right">
@@ -80,13 +80,13 @@ const index = () => {
                       <div className="tag">設計規範</div>
                     </div>
                   </div>
-                  <a className="info_btn" href={`/rallway`}>了解更多細節</a>
+                  <a className="info_btn" href={`/portfolio/rallway`}>了解更多細節</a>
                 </div>
               </div>
             </a>
 
             {/* three */}
-            <a href={`/vote`}>
+            <a href={`/portfolio/vote`}>
               <div className="card">
                 <div className="left"><img src={Vote} alt="" /></div>
                 <div className="right">
@@ -100,13 +100,13 @@ const index = () => {
                       <div className="tag">設計規範</div>
                     </div>
                   </div>
-                  <a className="info_btn" href={`/vote`}>了解更多細節</a>
+                  <a className="info_btn" href={`/portfolio/vote`}>了解更多細節</a>
                 </div>
               </div>
             </a>
 
             {/* four */}
-            <a href={`/viewsonic`}>
+            <a href={`/portfolio/viewsonic`}>
               <div className="card">
                 <div className="left"><img src={ViewSonic} alt="" /></div>
                 <div className="right">
@@ -120,7 +120,7 @@ const index = () => {
                       <div className="tag">活動UI</div>
                     </div>
                   </div>
-                  <a className="info_btn" href={`/viewsonic`}>了解更多細節</a>
+                  <a className="info_btn" href={`/portfolio/viewsonic`}>了解更多細節</a>
                 </div>
               </div>
             </a>

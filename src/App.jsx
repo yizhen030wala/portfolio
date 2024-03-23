@@ -4,23 +4,15 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-// eslint-disable-next-line no-unused-vars
-// import Nav from '../public/nav/nav';
-// import Jenny from '../public/nav/outlet'
-import Home from '../src/pages/home/index'
+
+// import Home from '../src/pages/home/index'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    // <>
-    //   <Routes>
-    //     <Route path="/jenny" element={<Jenny />}>
-    //       <Route path="/" element={<Home />} />
-    //     </Route>
-    //   </Routes>
-    // </>
 
     <>
-      <Home />
+      <Outlet />
     </>
   )
 }

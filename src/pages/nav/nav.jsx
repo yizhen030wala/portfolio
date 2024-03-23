@@ -61,14 +61,14 @@ function Header() {
             <div className="header" style={headerStyle}>
                 {/* LOGO  */}
 
-                <a className='logo' href={`/`}></a>
+                <a className='logo' href={`/portfolio/`}></a>
 
                 <div className="wrap">
                     {/* 置頂導覽按鈕  */}
                     <nav>
                         <ul className="nav_btn">
-                            <li className='btn_link' ><a href={`/`}>Works</a></li>
-                            <li className='btn_link'><a href={`/about`}>About me</a></li>
+                            <li className='btn_link' ><a href={`/portfolio/`}>Works</a></li>
+                            <li className='btn_link'><a href={`/portfolio/about`}>About me</a></li>
                             <li className='btn_link'><a href='https://drive.google.com/file/d/1yqwU2URFxbTO7FR5rEQI93hwR_yQrsZ4/view?usp=sharing' target='_blank'>下載履歷</a></li>
                         </ul>
                     </nav>

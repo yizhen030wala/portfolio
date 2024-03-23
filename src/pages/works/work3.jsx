@@ -21,7 +21,7 @@ const work3 = () => {
                     <img src={One} alt="" /><img src={Two} alt="" /><img src={Three} alt="" />
                 </div>
                 <div className="other_project">
-                    <a href={`/rallway`} className="go_back">
+                    <a href={`/portfolio/rallway`} className="go_back">
                         <div className="wrap">
                             <p>上一篇</p>
                             <h2>台鐵列車動態 redesign </h2>
@@ -30,7 +30,7 @@ const work3 = () => {
                         <figure><img src={Rallway} alt="" /></figure>
 
                     </a>
-                    <a href={`/viewsonic`} className="next">
+                    <a href={`/portfolio/viewsonic`} className="next">
                         <div className="wrap">
                             <p>下一篇</p>
                             <h2>ViewSonic作品集 </h2>

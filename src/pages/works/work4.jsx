@@ -17,7 +17,7 @@ const work4 = () => {
                     </div>
                 </div>
                 <div className="other_project">
-                    <a href={`/vote`} className="go_back">
+                    <a href={`/portfolio/vote`} className="go_back">
                         <div className="wrap">
                             <p>上一篇</p>
                             <h2>總統開票地圖 </h2>

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
+import App from './App.jsx'
 
 import Home from '../src/pages/home/index'
 import About from '../src/pages/about/about'
@@ -17,29 +17,36 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
+    path: "/portfolio/",
+    element: <App />,
+    children: [
+      {
+        path: "/portfolio/",
+        element: <Home />,
+      },
+      {
+        path: "/portfolio/about",
+        element: <About />,
+      },
+      {
+        path: "/portfolio/reto",
+        element: <Work1 />,
+      },
+      {
+        path: "/portfolio/rallway",
+        element: <Work2 />,
+      },
+      {
+        path: "/portfolio/vote",
+        element: <Work3 />,
+      },
+      {
+        path: "/portfolio/viewsonic",
+        element: <Work4 />,
+      },
+    ]
   },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "reto",
-    element: <Work1 />,
-  },
-  {
-    path: "rallway",
-    element: <Work2 />,
-  },
-  {
-    path: "vote",
-    element: <Work3 />,
-  },
-  {
-    path: "viewsonic",
-    element: <Work4 />,
-  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
