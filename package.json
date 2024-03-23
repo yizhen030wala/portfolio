@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://yizhen030wala.github.io/jennychen-uiux-portfolio-basic",
+  "homepage": "https://yizhen030wala.github.io/portfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
