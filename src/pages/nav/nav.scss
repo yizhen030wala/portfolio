@@ -54,11 +54,11 @@
     .logo {
         width: 3rem;
         height: 3rem;
-        background-image: url('../../src//assets//images//navLogo.png');
+        background-image: url('../../assets//images//navLogo.png');
         background-size: cover;
 
         &:hover {
-            background-image: url('../../src//assets//images/logoHover.png');
+            background-image: url('../../assets//images/logoHover.png');
             rotate: 15;
         }
     }
