@@ -1,0 +1,54 @@
+@import "../../../src/assets/scssRule/rule.scss";
+@import "../../../src/assets/scssRule/all.scss";
+
+
+
+
+// ===============================================
+footer {
+    @include size(100%, 30vh);
+    @include row-center;
+    background-color: $color_black;
+    justify-content: space-around;
+
+
+
+    .mail_wrap {
+        color: $color-white;
+
+        h3 {}
+
+        a {
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+
+    .logo_wrap {
+        @include row-center;
+        gap: 1rem;
+
+        .logo {
+            @include size(50px, 50px);
+            background-color: $color-white;
+            border-radius: $border_radius_10px;
+            @include center;
+
+            &:hover {
+                background-color: $color-gray;
+
+            }
+
+        }
+    }
+}
+
+// ===================RWD============================
+@media screen and (max-width: 850px) {
+    footer {
+        flex-direction: column;
+        gap: 40px !important;
+        justify-content: center;
+
+    }
+}

@@ -1,0 +1,254 @@
+@import "../../assets/scssRule/all.scss";
+@import "../../assets/scssRule/rule.scss";
+
+// 
+
+// ===============================================
+main {
+    .hero {
+        @include size(100%, 100vh);
+        background-image: url('../../assets/images/bg-1.png');
+        background-size: cover;
+        background-position: bottom;
+        padding-top: 10vh;
+        padding: 0vh 20vh;
+        @include center;
+
+        .wrap {
+            @include showFlex_column;
+            gap: 55px;
+
+            .text_wrap {
+                h1 {
+                    @include h1_desktop;
+                    color: $color-white;
+                }
+
+                figure {
+                    // width: 100%;
+                    background-image: url('../../assets/images/textDesk.png');
+                    height: 80px;
+                    background-size: cover;
+                }
+            }
+
+            .btn_wrap {
+                @include showFlex_row;
+                gap: 20px;
+
+                a.btn_black {
+                    @include text_btn_big;
+                    text-align: center;
+                }
+
+                a.btn_white {
+                    text-align: center;
+                    @include row-center;
+                    gap: 5px;
+                    @include text_btn_big;
+                    color: $color_deep_gray2;
+                    background-color: $color-white;
+
+                    &:hover {
+                        color: $color_deep_gray2;
+                        background-color: $color-gray;
+                    }
+
+                    &:focus {
+                        color: $color_deep_gray2;
+                        background-color: $color-gray;
+                    }
+
+                    img {
+                        @include size(36px, 36px);
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+    .works {
+        background-image: url('../../assets/images/bg-2.png');
+        // background-size: 100%;
+        background-position: top;
+        background-size: cover;
+        padding: 10vh 20vh;
+        @include center;
+
+        .title {
+            margin: 50px 0px;
+
+            img {
+                height: 135px;
+            }
+        }
+
+        .container {
+            @include showFlex_column;
+            gap: 10vh;
+
+            .card {
+                overflow: hidden;
+                @include size(100%, 60vh);
+                @include showFlex_row;
+                background-color: $color-white;
+                border-radius: $border_radius_20px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
+                .left {
+                    width: 60%;
+                    overflow: hidden;
+                    height: 100%;
+
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+
+                .right {
+                    @include showFlex_column;
+                    width: 40%;
+                    padding: 40px;
+                    justify-content: space-between;
+
+                    .info_top {
+                        @include showFlex_column;
+                        gap: 10px;
+
+                        h4 {
+                            @include h4_desktop;
+                            font-size: 16px;
+                            font-weight: 350;
+                        }
+
+                        h1 {
+                            @include h2_desktop;
+                        }
+
+                        .tag_wrap {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+
+                            .tag {
+                                font-size: 14px;
+                                padding: 10px 20px;
+                                background-color: $color-gray;
+                                color: $color_deep_gray2;
+                                border-radius: $border_radius_10px
+                            }
+                        }
+                    }
+
+                    .info_btn {
+                        @include text_btn_big;
+                        border-radius: $border_radius_10px;
+                        font-size: 30px;
+                        text-align: center;
+                        color: $color-white;
+                        font-weight: 400;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//===================RWD============================
+
+// 手機
+@media screen and (max-width: 1024px) {
+    main {
+        .hero {
+            padding: 50px 16px !important;
+
+            .wrap {
+                .text_wrap {
+                    h1 {
+                        @include h1_phone;
+                    }
+
+                    figure {
+                        background-image: url('../../assets/images/textPhone.png');
+                        background-size: cover;
+                        height: 12vh;
+
+
+                    }
+
+                }
+
+                .btn_wrap {
+                    flex-direction: column;
+
+                    .btn_black {
+                        font-size: 24px;
+                    }
+
+                    .btn_white {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .works {
+            padding: 50px 16px;
+
+            .title {
+                // min-width: 21px;
+                width: 250px;
+                min-height: 75px;
+                @include itemCenter;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+
+        .container {
+            .card {
+                flex-direction: column !important;
+                // @include size(100%, 70vh) !important;
+                height: 80vh !important;
+
+
+                .left {
+                    width: 100% !important;
+                    height: 40% !important;
+                }
+
+                .right {
+                    width: 100% !important;
+                    height: 60%;
+
+                    .info_top {
+                        h4 {
+                            @include h2_phone;
+                        }
+
+                        h1 {
+                            @include h3_phone;
+                        }
+
+                        .tag_wrap {
+                            // display: none !important;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

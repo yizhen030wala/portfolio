@@ -1,0 +1,428 @@
+@import "../../assets/scssRule/all.scss";
+@import "../../assets/scssRule/rule.scss";
+
+// ===============================================
+
+
+.intro,
+.skills,
+.work_tools,
+.speak,
+.experiences {
+    width: 70%;
+}
+
+.skills,
+.work_tools,
+.speak {
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+}
+
+.about {
+    background-image: url('../../assets/images/bg-4.png');
+    background-size: cover;
+    // background-color: $color-white;
+    @include center;
+    gap: 3rem;
+    padding-top: 10vh;
+    padding: 10vh 2vh;
+
+    h2 {
+        @include h3_desktop;
+        font-size: 1.8rem;
+    }
+
+    .intro {
+        @include center;
+        @include size(100%, 90vh);
+
+        .wrap {
+            @include row-center;
+            @include size(70%, 70vh);
+
+            .left {
+                width: 40%;
+                height: 90%;
+                // background-color: red;
+                overflow: hidden;
+                border-radius: $border_radius_20px;
+
+                img {
+                    width: 120%; //*
+                }
+            }
+
+            .right {
+                @include showFlex_column;
+                width: 60%;
+                gap: 1.2rem;
+                padding: 1rem 2rem;
+
+
+                p {
+                    line-height: 2;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+
+    .skills {
+        @include showFlex_column;
+        gap: 30px;
+
+        .skills_wrap {
+            @include row-center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: -8px;
+            margin-right: -8px;
+
+            .skill {
+                border-radius: 50px;
+                border: 1px solid $color_deep_gray2;
+                padding: 10px 20px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .work_tools {
+        @include showFlex_column;
+        gap: 30px;
+
+        .tools_wrap {
+            @include row-center;
+            flex-wrap: wrap;
+            justify-content: start;
+            // gap: 10px;
+
+
+            .tools {
+                @include center;
+                @include size(50px, 50px);
+
+            }
+        }
+    }
+
+    .speak {
+        @include showFlex_column;
+        gap: 30px;
+
+        .speak_wrap {
+            @include row-center;
+            justify-content: space-between;
+            gap: 10px;
+
+            .lauange {
+                border: 1px solid;
+                width: calc(100%/3 - 10px);
+                padding: 20px 20px;
+                border-radius: $border_radius_15px;
+                @include showFlex_column;
+                gap: 20px;
+
+                h2 {}
+            }
+        }
+
+    }
+
+    // experiences
+    .experiences {
+        @include showFlex_column;
+        gap: 3rem;
+
+        // work_wrap
+        .work_wrap {
+            @include showFlex_column;
+            gap: 3rem;
+            align-items: center;
+
+
+            .work {
+                // width: 100vh;
+                @include showFlex_row;
+                justify-content: center;
+                align-items: center;
+                // height: 25vh;
+                gap: 10px;
+
+                .A,
+                .B,
+                .C {
+                    height: 100%;
+                }
+
+                .A {
+                    display: none;
+                }
+
+                .b {
+                    width: 65%;
+                    // border: 1px solid red;
+                    @include showFlex_column;
+                    // justify-content: space-between;
+                    gap: 10px;
+
+                    .top {
+                        .title {
+                            @include row-center;
+                            justify-content: start;
+                            gap: 20px;
+
+                            h3 {
+                                font-size: 30px;
+                            }
+
+                            h4 {
+                                font-size: 20px;
+                            }
+                        }
+
+
+
+                        h4.day {
+                            font-size: 20px;
+                        }
+
+                    }
+
+                    .bottom {
+                        font-size: 20px;
+                    }
+                }
+
+                .c {
+                    width: 35%;
+                    overflow: hidden;
+                    border-radius: $border_radius_15px;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover
+                    }
+
+                    img.viewsonic {
+                        @include center;
+                        width: 70%;
+                        overflow: hidden;
+                        border-radius: $border_radius_15px;
+                        justify-content: flex-end;
+
+                    }
+                }
+            }
+        }
+
+        // 2023_wrap
+        .lastYear {
+            @include showFlex_row;
+            gap: 3rem;
+
+            .korea,
+            .frontEnd {
+                @include showFlex_column;
+                // height: 70vh;
+                width: 50%;
+                gap: 10px;
+
+                figure {
+                    height: 60%;
+                    overflow: hidden;
+                    border-radius: $border_radius_15px;
+                }
+
+                figure.phone {
+                    display: none;
+                }
+
+                .text {
+                    h4 {
+                        font-size: 20px;
+                        color: $color_deep_gray1;
+                    }
+                }
+
+                .content {
+                    font-size: 20px;
+
+                }
+            }
+        }
+
+
+
+    }
+}
+
+// =================RWD==============================
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 20px !important;
+    }
+
+    .intro,
+    .skills,
+    .work_tools,
+    .speak,
+    .experiences {
+        width: 100%;
+    }
+
+    .skills,
+    .work_tools,
+    .speak {
+        border-bottom: 1px solid black;
+        padding: 2rem 0rem;
+    }
+
+
+    .about {
+        padding: 50px 16px !important;
+
+        .intro {
+            .wrap {
+                @include showFlex_column;
+                width: 100%;
+
+                .left {
+                    height: 50%;
+                    width: 90%;
+                }
+
+                .right {
+                    height: 50%;
+                    width: 100%;
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+
+        .skills {
+            .skills_wrap {
+                justify-content: start !important;
+
+                .skill {
+
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        .work_tools {
+            .tools_wrap {
+                .tools {
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        .speak {
+            .speak_wrap {
+                @include showFlex_column;
+
+                .lauange {
+                    width: 100% !important;
+
+                    h4 {}
+                }
+            }
+        }
+
+        // experiences
+        .experiences {
+
+            // work_wrap
+            .work_wrap {
+
+                .work {
+                    @include showFlex_column;
+
+                    .A {
+                        display: block;
+
+                        img {}
+
+                    }
+
+                    .b {
+                        width: 100%;
+
+                        .top {
+
+                            .title {
+                                @include showFlex_column;
+                                align-items: start;
+                                gap: 3px;
+
+                                h3 {
+                                    font-size: 24px;
+                                }
+
+                                h4 {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .day {
+                                font-size: 18px !important;
+                                color: $color_deep_gray3;
+
+                            }
+                        }
+
+                        .bottom {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .c {
+                        display: none;
+
+                        img {}
+                    }
+                }
+            }
+
+            // 2024_wrap
+            .lastYear {
+                @include showFlex_column;
+                width: 100%;
+
+                .korea,
+                .frontEnd {
+                    width: 100%;
+
+                    figure {
+                        height: 40%;
+                    }
+
+                    figure.phone {
+                        display: block;
+                    }
+
+                    figure.desk {
+                        display: none;
+                    }
+
+                    .text {
+                        h4 {}
+                    }
+
+                    .content {}
+                }
+            }
+        }
+    }
+}

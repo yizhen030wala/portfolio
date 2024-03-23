@@ -1,0 +1,146 @@
+@import "../../../src/assets/scssRule/rule.scss";
+@import "../../../src/assets/scssRule/all.scss";
+
+
+// ===================RWD============================
+
+// 手機
+@media screen and (max-width: 850px) {
+    .header {
+        padding: 5px 16px !important;
+
+        .wrap {
+            ul.nav_btn {
+                display: none;
+            }
+        }
+
+
+    }
+}
+
+// ===============================================
+
+.visible {
+    display: flex;
+    // top: 0;
+    transition: top 0.5s ease-in-out;
+    z-index: 800;
+    position: fixed;
+    overflow: hidden;
+    // .header{
+    //     background-color: $color-white;
+    // }
+}
+
+.hidden {
+    display: none;
+    top: -80px;
+    transition: top 0.5s ease-in-out;
+}
+
+.header {
+    @include row-center;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: transparent;
+    // backdrop-filter: blur(8px);
+    // background-color: rgba(255, 255, 255, 0.8);
+    z-index: 800;
+
+    .logo {
+        width: 3rem;
+        height: 3rem;
+        background-image: url('../../src//assets//images//navLogo.png');
+        background-size: cover;
+
+        &:hover {
+            background-image: url('../../src//assets//images/logoHover.png');
+            rotate: 15;
+        }
+    }
+
+    .wrap {
+
+        /* 表頭功能列 */
+        .nav_btn {
+            // box-sizing: content-box;
+            height: 30px;
+            padding: 5px 30px;
+            display: flex;
+            align-items: center;
+            gap: 0 1rem;
+            border-radius: $border_radius_20px;
+
+            li {
+
+                a {
+                    @include text_btn_middle;
+                    font-size: 1rem;
+                    background-color: $color-white;
+                    color: $color_black;
+
+                    &:hover {
+                        background-color: $color_deep_gray2;
+                        color: $color-white;
+                    }
+
+                    &:focus {
+                        background-color: $color_deep_gray2;
+                        color: $color-white;
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        .user {
+            width: 120px;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+
+            .menu_box {
+                display: none;
+                @include size(32px, 32px);
+
+                img {
+                    width: 100%;
+                    fill: $color-white;
+
+                }
+
+                @media (max-width: 850px) {
+                    display: block;
+                }
+            }
+
+
+        }
+
+        .popup-content {
+            display: none;
+            position: absolute;
+            top: 110%;
+            right: 0;
+            z-index: 999;
+        }
+
+        .hover-trigger:hover+.popup-content,
+        .popup-content:hover {
+            display: block;
+
+        }
+
+
+
+    }
+    
+
+}
