@@ -2,6 +2,66 @@
 @import "../../assets/scssRule/rule.scss";
 
 // ===============================================
+.top {
+    background-image: url('../../assets/images/RETO\ CH/cover1.png');
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    @include center;
+
+
+    .porject_info {
+        position: absolute;
+        bottom: -50px;
+        @include shadow;
+        padding: 20px;
+        border-radius: $border_radius_20px;
+        width: 70%;
+        background-color: $color_white;
+
+
+        .col {
+
+            @include showFlex_column;
+            gap: 20px;
+
+            .row {
+                @include showFlex_row;
+                justify-content: space-between;
+
+                p {
+                    font-size: 14px;
+                    color: $color_deep_gray3;
+                }
+
+                .text {
+                    @include showFlex_column;
+                    gap: 5px;
+
+                    h6 {
+                        font-size: 18px;
+                    }
+                }
+
+
+                .tag_wrap {
+                    @include showFlex_row;
+
+                    gap: 10px;
+
+                    .tag {
+                        padding: 10px;
+                        font-size: 12px;
+                        background-color: $color-gray;
+                        border-radius: $border_radius_10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 main.portfolio {
     @include showFlex_column;
     @include center;
@@ -12,57 +72,8 @@ main.portfolio {
         @include showFlex_column;
         gap: 3rem;
 
-        .top {
-            background-image: url('../../assets/images/RETO\ CH/cover1.png');
-            background-size: cover;
-            position: relative;
-            height: 50vh;
-            width: 100%;
-            @include center;
-
-
-            .porject_info {
-                position: absolute;
-                bottom: -50px;
-                @include shadow;
-                padding: 20px;
-                border-radius: $border_radius_20px;
-                width: 70%;
-                background-color: $color_white;
-
-
-                .col {
-
-                    @include showFlex_column;
-                    gap: 20px;
-
-                    .row {
-                        @include showFlex_row;
-                        justify-content: space-between;
-
-                        .tag_wrap {
-                            @include showFlex_row;
-
-                            gap: 10px;
-
-                            .tag {
-                                padding: 10px;
-                                font-size: 14px;
-                                background-color: $color-gray;
-                                border-radius: $border_radius_10px;
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-
-
-
-
         p {
-            font-size: 24px;
+            font-size: 20px;
         }
 
         ol {
@@ -73,7 +84,8 @@ main.portfolio {
         }
 
         h2 {
-            @include h3_desktop;
+            @include h4_desktop;
+            font-weight: 500;
         }
 
         img {
@@ -94,6 +106,7 @@ main.portfolio {
         gap: 3rem;
         width: 100%;
 
+
         .go_back,
         .next {
             @include size(50%, 30vh);
@@ -109,6 +122,13 @@ main.portfolio {
             &:hover {
                 @include shadow;
 
+                .wrap {
+                    p {
+                        color: $color_black;
+                    }
+
+                }
+
             }
 
             .wrap {
@@ -116,11 +136,13 @@ main.portfolio {
                 padding: 20px;
                 text-align: left;
                 width: 80%;
-                gap: 2rem;
+                gap: 1rem;
 
                 h2 {}
 
-                p {}
+                p {
+                    color: $color_deep_gray3;
+                }
 
             }
 
@@ -131,7 +153,7 @@ main.portfolio {
             }
 
             img {
-                width: 125%;
+                width: 130%;
             }
 
         }
@@ -159,11 +181,23 @@ main.portfolio.png {
 
 // ===================
 main.portfolio.reto {
+    .porject_info {
+        .col {
+            .row {
+                .tag_wrap {
+                    .tag {}
+                }
+            }
+        }
+    }
+
     .text_wrap {
         @include showFlex_column;
         gap: 4rem;
+        padding: 50px 5vh !important;
+        // width: 70%;
 
-        h2{
+        h2 {
             color: #3D9D35;
         }
 
@@ -181,9 +215,68 @@ main.portfolio.reto {
             }
         }
 
-        img.design {
+        img.design, img.thanks{
             box-shadow: none;
             border-radius: 0px;
+        }
+
+        .content_wrap {
+            @include showFlex_column;
+            gap: 1rem;
+            ol{
+                list-style: decimal;
+                li{
+                    font-size: 20px;
+                    margin: 0px 50px;
+                }
+            }
+            a{
+                text-decoration: underline;
+                color: $color_deep_gray3;
+            }
+        }
+
+        .goals_wrap {
+            @include showFlex_column;
+            gap: 20px;
+            background-color: $color-gray;
+            border-radius: $border_radius_20px;
+            padding: 20px;
+
+            .box_wrap {
+                @include showFlex_row;
+                justify-content: space-between;
+                gap: 30px;
+
+                .box {
+                    h2 {
+                        font-size: 24px;
+                        line-height: 250%;
+
+                    }
+
+                    p {
+                        font-size: 18px;
+                        line-height: 150%;
+                    }
+
+                    gap: 20px;
+                    padding: 20px;
+                    width: 50%;
+                    border: 1px solid $color_deep_gray3;
+                    border-radius: $border_radius_15px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    @include showFlex_column;
+
+                    .box {
+                        width: 100%;
+
+                    }
+
+                }
+            }
         }
 
         .reto_img_wrap {
@@ -196,44 +289,54 @@ main.portfolio.reto {
         }
     }
 
-    .box_wrap {
-        @include showFlex_row;
-        justify-content: space-between;
-        gap: 30px;
 
-        .box {
-            h2 {
-                font-size: 24px;
-                line-height: 250%;
-
-            }
-
-            p {
-                font-size: 18px;
-                line-height: 150%;
-            }
-
-            gap: 20px;
-            padding: 20px;
-            width: 50%;
-            border: 1px solid $color_deep_gray3;
-            border-radius: $border_radius_15px;
-        }
-
-        @media screen and (max-width: 1024px) {
-            @include showFlex_column;
-
-            .box {
-                width: 100%;
-
-            }
-
-        }
-    }
 }
 
 // ==============RWD===========================
 @media screen and (max-width: 1024px) {
+
+    .top {
+        background-image: url('../../assets/images/RETO\ CH/cover1.png');
+        background-size: cover;
+        position: relative;
+        height: 55vh;
+        width: 100%;
+        @include center;
+
+
+        .porject_info {
+            position: absolute;
+            bottom: -20px;
+            @include shadow;
+            padding: 20px;
+            border-radius: $border_radius_20px;
+            width: 90%;
+            background-color: $color_white;
+
+
+            .col {
+
+                @include showFlex_column;
+                gap: 10px;
+
+                .row {
+                    @include showFlex_column;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    .col {
+                        line-height: 120%;
+                    }
+
+                    .tag_wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+
+    }
+
     main.portfolio {
         padding: 50px 16px !important;
         margin-top: 6vh;
@@ -241,48 +344,6 @@ main.portfolio.reto {
 
         .port_content {
 
-
-            .top {
-                background-image: url('../../assets/images/RETO\ CH/cover1.png');
-                background-size: cover;
-                position: relative;
-                height: 55vh;
-                width: 100%;
-                @include center;
-
-
-                .porject_info {
-                    position: absolute;
-                    bottom: -20px;
-                    @include shadow;
-                    padding: 20px;
-                    border-radius: $border_radius_20px;
-                    width: 90%;
-                    background-color: $color_white;
-
-
-                    .col {
-
-                        @include showFlex_column;
-                        gap: 10px;
-
-                        .row {
-                            @include showFlex_column;
-                            justify-content: space-between;
-                            gap: 10px;
-
-                            .col {
-                                line-height: 120%;
-                            }
-
-                            .tag_wrap {
-                                flex-wrap: wrap;
-                            }
-                        }
-                    }
-                }
-
-            }
 
             p {
                 font-size: 14px;
