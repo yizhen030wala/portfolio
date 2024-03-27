@@ -20,7 +20,7 @@
 }
 
 .about {
-    background-image: url('../../assets/images/bg-4.png');
+    // background-image: url('../../assets/images/bg-4.png');
     background-size: cover;
     // background-color: $color-white;
     @include center;
@@ -144,6 +144,9 @@
             @include showFlex_column;
             gap: 3rem;
             align-items: center;
+            background-color: $color-gray;
+            padding: 20px;
+            border-radius: $border_radius_15px;
 
 
             .work {
@@ -233,13 +236,16 @@
         .lastYear {
             @include showFlex_row;
             gap: 3rem;
+            background-color: $color-gray;
+            padding: 20px;
+            border-radius: $border_radius_15px;
 
             .korea,
             .frontEnd {
                 @include showFlex_column;
                 // height: 70vh;
                 width: 50%;
-                gap: 10px;
+                gap: 20px;
 
                 figure {
                     height: 60%;
@@ -323,7 +329,7 @@
         }
 
         .skills {
-            margin-top: 20vh;
+            margin-top: 10vh;
 
             .skills_wrap {
                 justify-content: start !important;

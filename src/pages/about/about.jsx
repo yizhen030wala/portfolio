@@ -43,7 +43,7 @@ const about = () => {
                                 {/* <br></br>
 
                                 短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。 */}
-                                </p>
+                            </p>
                         </div>
                     </div>
 
@@ -100,6 +100,34 @@ const about = () => {
                 {/* 經歷 */}
                 <div className="experiences">
                     <h2>我的經歷</h2>
+                    {/* 2024 */}
+                    <div className="lastYear">
+                        <div className="korea">
+                            <figure><img src={Exchange} alt="" /></figure>
+                            <div className="text">
+                                <h2>韓國漢陽大學交換生</h2>
+                                <h4>2023/FEB-JUN</h4>
+                            </div>
+                            <div className="content">在韓國除了學習韓語外，<br></br>同時也觀察當地的設計美感與軟體介面操作，<br></br>
+                                並增進了多元交流的能力!
+                            </div>
+                        </div>
+                        <div className="frontEnd">
+                            <figure className='phone'><img src={Frontend} alt="" /></figure>
+                            <div className="text">
+                                <h2>互動式前端網頁訓練班</h2>
+                                <h4>2023/Nov-2024/Feb
+                                </h4>
+                            </div>
+                            <div className="content">因為希望自己能掌握更多程式邏輯，做介面設計與電子信等能夠讓想法實現與更加自由，
+                                因此報名此課程，從介面設計到使用 React 前端框架等，與組員合作產出專題作品。
+                                <br></br>
+                                在此專題中，我主要擔任 UI/UX Designer，設計 UI Flow, layout, prototype 與 Design guideline，
+                                並協助兩位工程師組員撰寫 RWD 與建立程式設計規範。
+                            </div>
+                            <figure className='desk'><img src={Frontend} alt="" /></figure>
+                        </div>
+                    </div>
                     {/* work */}
                     <div className="work_wrap">
                         {/* one */}
@@ -115,7 +143,9 @@ const about = () => {
                                     <h4 className='day'>2022/Jan-Sep</h4>
                                 </div>
                                 <div className="bottom">
-                                    ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM電子信與影片剪輯等製作，提昇了頻道影片120%的觀看次數，也依照公司/部門的設計規範製作口罩、衣服圖樣等周邊物。<br></br>
+                                    <span> ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM電子信與影片剪輯等製作，提昇了頻道影片120%的觀看次數，也依照公司/部門的設計規範製作口罩、衣服圖樣等周邊物。</span>
+
+                                    <br></br>
                                     獨立製作過：<br></br>
                                     <ol>
                                         <li> 教育科技展：主視覺、活動網頁UI、展覽周邊物，並協助展覽當日活動舉行。</li>
@@ -169,34 +199,7 @@ const about = () => {
                             <div className="c"><img src={Eco} alt="" /></div>
                         </div>
                     </div>
-                    {/* 2024 */}
-                    <div className="lastYear">
-                        <div className="korea">
-                            <figure><img src={Exchange} alt="" /></figure>
-                            <div className="text">
-                                <h2>韓國漢陽大學交換生</h2>
-                                <h4>2023/FEB-JUN</h4>
-                            </div>
-                            <div className="content">在韓國除了學習韓語外，<br></br>同時也觀察當地的設計美感與軟體介面操作，<br></br>
-                                並增進了多元交流的能力!
-                            </div>
-                        </div>
-                        <div className="frontEnd">
-                            <figure className='phone'><img src={Frontend} alt="" /></figure>
-                            <div className="text">
-                                <h2>互動式前端網頁訓練班</h2>
-                                <h4>2023/Nov-2024/Feb
-                                </h4>
-                            </div>
-                            <div className="content">因為希望自己能掌握更多程式邏輯，做介面設計與電子信等能夠讓想法實現與更加自由，
-                                因此報名此課程，從介面設計到使用 React 前端框架等，與組員合作產出專題作品。
-                                <br></br>
-                                在此專題中，我主要擔任 UI/UX Designer，設計 UI Flow, layout, prototype 與 Design guideline，
-                                並協助兩位工程師組員撰寫 RWD 與建立程式設計規範。
-                            </div>
-                            <figure className='desk'><img src={Frontend} alt="" /></figure>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
