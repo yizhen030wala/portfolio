@@ -1,0 +1,28 @@
+/* 初始隱藏動畫元素 */
+@import "../../assets/scssRule/all.scss";
+@import "../../assets/scssRule/rule.scss";
+
+.loadingAnimation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+
+    /* 從下方位移 */
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    &.show {
+        transform: translate(-50%, -50%) translateY(0);
+
+        /* 顯示動畫 */
+        opacity: 1;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+
+// .loadingAnimation:not(.show) {
+//     display: none;
+// }
