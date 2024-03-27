@@ -15,6 +15,7 @@ const footer = () => {
                 <div className="mail_wrap">
                     <h3>Email</h3> 
                     <a href="">yizhenchen06@gmail</a>
+                    <p>© 2023 JennyChen. All Rights Reserved.</p>
                 </div>
                 <div className="logo_wrap">
                     <div className="logo"><a href="https://www.behance.net/wualwwalw0310/projects" target="_blank"><img src={Behance} alt="" /></a></div>

@@ -34,14 +34,16 @@ const about = () => {
                     <div className="wrap">
                         <div className="left"><img src={Me} alt="" /></div>
                         <div className="right">
-                            <h2>Hello，我是 Jenny，很高興認識你！</h2>
+                            <h2>Hello，我是 Jenny陳怡臻！</h2>
                             <p>我是一位擅長插畫，並時常觀察生活中的細節美感的設計師。<br></br>
 
                                 我擁有多元的設計能力，並熟悉多個設計軟體，期望能以使用/觀看者為中心去思考問題，讓設計的作品更發揮最大的價值與效益。<br></br>
 
-                                在實習中前輩們肯定我的製圖能力與時程管理；一起製作專題的同學朋友們則肯定我的創意發想能力、執行力與創造力。<br></br>
+                                在實習中前輩們肯定我的製圖能力與時程管理；一起製作專題的同學朋友們則肯定我的創意發想能力、執行力與創造力。
+                                {/* <br></br>
 
-                                短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。</p>
+                                短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。 */}
+                                </p>
                         </div>
                     </div>
 
@@ -105,7 +107,7 @@ const about = () => {
                             <div className="A"><img src={Intern} alt="" />
                             </div>
                             <div className="b">
-                                <div className="top">
+                                <div className="top_About">
                                     <div className="title">
                                         <h3>Design Intern </h3>
                                         <h4>Viewsonic 優派國際股份有限公司</h4>
@@ -113,8 +115,7 @@ const about = () => {
                                     <h4 className='day'>2022/Jan-Sep</h4>
                                 </div>
                                 <div className="bottom">
-                                    ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM電子信與影片剪輯等製作，<br></br>
-                                    其中，我提昇了頻道影片120%的觀看次數，也依照公司/部門的設計規範製作口罩、衣服圖樣等周邊物。<br></br>
+                                    ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM電子信與影片剪輯等製作，提昇了頻道影片120%的觀看次數，也依照公司/部門的設計規範製作口罩、衣服圖樣等周邊物。<br></br>
                                     獨立製作過：<br></br>
                                     <ol>
                                         <li> 教育科技展：主視覺、活動網頁UI、展覽周邊物，並協助展覽當日活動舉行。</li>
@@ -133,7 +134,7 @@ const about = () => {
                                 <div className="line"></div>
                             </div>
                             <div className="b">
-                                <div className="top">
+                                <div className="top_About">
                                     <div className="title">
                                         <h3>華語教學實習   </h3>
                                         <h4>南非德本學校</h4>
@@ -153,7 +154,7 @@ const about = () => {
 
                             </div>
                             <div className="b">
-                                <div className="top">
+                                <div className="top_About">
                                     <div className="title">
                                         <h3>Intern </h3>
                                         <h4>富邦文教基金會-未來自造所</h4>
@@ -176,8 +177,8 @@ const about = () => {
                                 <h2>韓國漢陽大學交換生</h2>
                                 <h4>2023/FEB-JUN</h4>
                             </div>
-                            <div className="content">在韓國除了學習韓語外，<br></br>
-                                也增進了多元交流的能力!
+                            <div className="content">在韓國除了學習韓語外，<br></br>同時也觀察當地的設計美感與軟體介面操作，<br></br>
+                                並增進了多元交流的能力!
                             </div>
                         </div>
                         <div className="frontEnd">

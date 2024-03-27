@@ -53,7 +53,7 @@ function Header() {
         transition: 'background-color 0.3s ease',
     };
 
-    
+
 
     return (
         <div className={cls}>
@@ -67,7 +67,7 @@ function Header() {
                     <nav>
                         <ul className="nav_btn">
                             <li className='btn_link' >
-                                <NavLink to={`/portfolio/`}
+                                {/* <NavLink to="/portfolio/"
                                     className={({ isActive, isPending }) =>
                                         isActive
                                             ? "active"
@@ -75,6 +75,14 @@ function Header() {
                                                 ? "pending"
                                                 : ""
                                     }>
+                                    Works
+                                </NavLink> */}
+                                <NavLink
+                                    to="/portfolio/"
+                                    className={(navData) =>
+                                        navData.isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Works
                                 </NavLink>
                                 {/* <a href={`/portfolio/`}>Works</a> */}
