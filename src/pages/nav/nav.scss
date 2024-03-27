@@ -75,6 +75,8 @@
             gap: 0 1rem;
             border-radius: $border_radius_20px;
 
+
+
             li {
 
                 a {
@@ -88,7 +90,7 @@
                         color: $color-white;
                     }
 
-                    &:focus {
+                    &:active {
                         background-color: $color_deep_gray2;
                         color: $color-white;
                     }

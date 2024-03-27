@@ -176,6 +176,10 @@ main.portfolio.png {
 
     .other_project {
         padding: 0vh 10vh;
+
+        @media screen and (max-width: 1024px) {
+            padding: 0 0;
+        }
     }
 }
 
@@ -288,12 +292,93 @@ main.portfolio.reto {
             overflow: hidden;
 
             img {
-                border-radius: 0px
+                border-radius: 0px !important;
             }
         }
 
+        .UI_wrap {
+            @include showFlex_row;
+            width: 50%;
+            gap: 20px;
+            margin: 20px 0px;
+
+            img {
+                border-radius: 15px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                @include showFlex_column;
+                width: 100%;
+
+                img {
+                    border-radius: 15px;
+                }
+
+            }
+        }
+
+        
+        .team {
+            width: 100%;
+            .img_comment {
+                @include center;
+                @include showFlex_column;
+                gap: 10px;
+                width: calc(100%/3);
+                height: 30vh;
+                margin: 20px 0px;
+                @media screen and (max-width: 1024px){
+                    width: 100%;
+                }
+
+
+                img {
+                    // height: 30vh;
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+                }
+
+                p {
+
+
+                    font-size: 12px;
+                    color: $color_deep_gray3;
+                }
+            }
+        }
+
+
         @media screen and (max-width: 1024px) {
             padding: 50px 16px !important;
+
+            .reto_img_wrap {
+                border-radius: 15px !important;
+
+            }
+
+            .content_wrap {
+                ol {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .goals_wrap {
+                .box_wrap {
+                    .box {
+                        h2 {
+                            font-size: 16px !important;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
 
         }
     }
@@ -305,23 +390,13 @@ main.portfolio.reto {
 @media screen and (max-width: 1024px) {
 
     .top {
-        background-image: url('../../assets/images/RETO\ CH/cover1.png');
-        background-size: cover;
-        position: relative;
-        height: 55vh;
-        width: 100%;
-        @include center;
 
 
         .porject_info {
             position: absolute;
-            bottom: -20px;
-            @include shadow;
-            padding: 20px;
-            border-radius: $border_radius_20px;
+            top: 8vh;
+            height: 425px;
             width: 90%;
-            background-color: $color_white;
-
 
             .col {
 
@@ -333,12 +408,20 @@ main.portfolio.reto {
                     justify-content: space-between;
                     gap: 10px;
 
+                    h1 {
+                        font-size: 32px !important;
+                    }
+
                     .col {
                         line-height: 120%;
                     }
 
                     .tag_wrap {
                         flex-wrap: wrap;
+
+                        .tag {
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -348,7 +431,7 @@ main.portfolio.reto {
 
     main.portfolio {
         padding: 50px 16px !important;
-        margin-top: 6vh;
+        margin-top: 80px;
 
 
         .port_content {
@@ -378,7 +461,7 @@ main.portfolio.reto {
 
             .go_back,
             .next {
-                width: 100%;
+                width: 100% !important;
                 height: 30%;
 
                 .wrap {

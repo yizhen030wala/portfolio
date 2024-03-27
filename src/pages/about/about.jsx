@@ -73,7 +73,7 @@ const about = () => {
                         <div className="tools"><img src={Sass} alt="" /></div>
                         <div className="tools"><img src={Java} alt="" /></div>
 
-                        
+
 
                     </div>
                 </div>
@@ -113,9 +113,16 @@ const about = () => {
                                     <h4 className='day'>2022/Jan-Sep</h4>
                                 </div>
                                 <div className="bottom">
-                                    依照需求製作社群貼文、影片及活動周邊等，<br></br>
-                                    影片封面在修改後觀看次數提升 120%，<br></br>
-                                    並製作了展覽的主視覺與網頁UI。
+                                    ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM電子信與影片剪輯等製作，<br></br>
+                                    其中，我提昇了頻道影片120%的觀看次數，也依照公司/部門的設計規範製作口罩、衣服圖樣等周邊物。<br></br>
+                                    獨立製作過：<br></br>
+                                    <ol>
+                                        <li> 教育科技展：主視覺、活動網頁UI、展覽周邊物，並協助展覽當日活動舉行。</li>
+                                        <li>教師年會：拍照背板、特殊尺寸講座資訊影像，時程表、活動貼紙等，以及協助年會動線引導等。</li>
+                                        <li>創新教育教師獎：頒獎背板、手拿板、獎狀、貼紙等，依照已公布的主視覺，調整活動字體的主題性。</li>
+                                    </ol>
+
+
                                 </div>
                             </div>
                             <div className="c"><img className='viewsonic' src={Intern} alt="" /></div>
@@ -143,7 +150,7 @@ const about = () => {
                         {/* three */}
                         <div className="work">
                             <div className="A"><img src={Eco} alt="" />
-                                
+
                             </div>
                             <div className="b">
                                 <div className="top">
@@ -174,13 +181,17 @@ const about = () => {
                             </div>
                         </div>
                         <div className="frontEnd">
-                        <figure className='phone'><img src={Frontend} alt="" /></figure>
+                            <figure className='phone'><img src={Frontend} alt="" /></figure>
                             <div className="text">
                                 <h2>互動式前端網頁訓練班</h2>
                                 <h4>2023/Nov-2024/Feb
                                 </h4>
                             </div>
-                            <div className="content">在進入業界之前希望能多了解前端相關的知識，讓自己在與工程師溝通時更加快速，並強化熟悉產品設計的流程、規範建立等，因此參與了職訓局的課程。
+                            <div className="content">因為希望自己能掌握更多程式邏輯，做介面設計與電子信等能夠讓想法實現與更加自由，
+                                因此報名此課程，從介面設計到使用 React 前端框架等，與組員合作產出專題作品。
+                                <br></br>
+                                在此專題中，我主要擔任 UI/UX Designer，設計 UI Flow, layout, prototype 與 Design guideline，
+                                並協助兩位工程師組員撰寫 RWD 與建立程式設計規範。
                             </div>
                             <figure className='desk'><img src={Frontend} alt="" /></figure>
                         </div>

@@ -180,7 +180,12 @@ main {
                     figure {
                         background-image: url('../../assets/images/textPhone.png');
                         background-size: cover;
-                        height: 12vh;
+                        height: 140px;
+
+                        @media screen and (max-width: 600px) {
+                            height: 100px;
+
+                        }
 
 
                     }
@@ -250,9 +255,15 @@ main {
                             font-size: 32px !important;
                         }
 
+
                         .tag_wrap {
                             display: none !important;
                         }
+                    }
+
+                    .info_btn {
+                        font-size: 24px !important;
+
                     }
 
                 }

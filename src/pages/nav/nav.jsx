@@ -1,12 +1,10 @@
-// import React, { useState, useEffect } from 'react'
 import { useState, useEffect } from 'react'
-// import { Link } from 'react-router-dom'; //物件內用到連結跳轉就需要放
 import './nav.scss'
-// import Logo from '../../src/assets/images/navLogo.png'
 import Menu from '../../assets/icon/menu.svg'
-// import UnLogin from '../ShowUnlogin/ShowUnlogin.jsx'
-// import Download from '../../src/assets/icon/download.svg'
 import MenuBox from './menu'
+import {
+    NavLink,
+} from "react-router-dom";
 
 function Header() {
     const [position, setPosition] = useState(window.scrollY)
@@ -55,6 +53,7 @@ function Header() {
         transition: 'background-color 0.3s ease',
     };
 
+    
 
     return (
         <div className={cls}>
@@ -67,7 +66,19 @@ function Header() {
                     {/* 置頂導覽按鈕  */}
                     <nav>
                         <ul className="nav_btn">
-                            <li className='btn_link' ><a href={`/portfolio/`}>Works</a></li>
+                            <li className='btn_link' >
+                                <NavLink to={`/portfolio/`}
+                                    className={({ isActive, isPending }) =>
+                                        isActive
+                                            ? "active"
+                                            : isPending
+                                                ? "pending"
+                                                : ""
+                                    }>
+                                    Works
+                                </NavLink>
+                                {/* <a href={`/portfolio/`}>Works</a> */}
+                            </li>
                             <li className='btn_link'><a href={`/portfolio/about`}>About me</a></li>
                             <li className='btn_link'><a href='https://drive.google.com/file/d/1yqwU2URFxbTO7FR5rEQI93hwR_yQrsZ4/view?usp=sharing' target='_blank'>下載履歷</a></li>
                         </ul>

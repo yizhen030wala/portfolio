@@ -15,10 +15,12 @@ import Vote from '../../assets/images/voting CH/cover.png'
 import Rallway from '../../assets/images/rallway/cover.png'
 
 const index = () => {
+  // const [currentPage, setCurrentPage] = useState('home');
+
   return (
     <>
       <Header />
-      <main>
+      <main >
         <div className="hero">
           <div className="wrap">
             <div className="text_wrap">
