@@ -88,10 +88,12 @@ $color_black: #1C1B1F;
 
     &:hover {
         cursor: pointer;
+        color: $color_white;
         background-color: $color_deep_gray1;
     }
 
-    &:focus {
+    &:active {
+        color: $color_white;
         background-color: $color_deep_gray1;
     }
 }

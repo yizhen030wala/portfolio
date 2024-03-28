@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './nav.scss'
 import Menu from '../../assets/icon/menu.svg'
+// import DownloadSvg from '../../assets/icon/download.svg'
 import MenuBox from './menu'
 import {
     NavLink,

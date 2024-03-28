@@ -34,7 +34,7 @@ const about = () => {
                     <div className="wrap">
                         <div className="left"><img src={Me} alt="" /></div>
                         <div className="right">
-                            <h2>Hello，我是 Jenny陳怡臻！</h2>
+                            <h2>Hello，我是 Jenny 陳怡臻！</h2>
                             <p>我是一位擅長插畫，並時常觀察生活中的細節美感的設計師。<br></br>
 
                                 我擁有多元的設計能力，並熟悉多個設計軟體，期望能以使用/觀看者為中心去思考問題，讓設計的作品更發揮最大的價值與效益。<br></br>
@@ -102,17 +102,7 @@ const about = () => {
                     <h2>我的經歷</h2>
                     {/* 2024 */}
                     <div className="lastYear">
-                        <div className="korea">
-                            <figure><img src={Exchange} alt="" /></figure>
-                            <div className="text">
-                                <h2>韓國漢陽大學交換生</h2>
-                                <h4>2023/FEB-JUN</h4>
-                            </div>
-                            <div className="content">在韓國除了學習韓語外，<br></br>同時也觀察當地的設計美感與軟體介面操作，<br></br>
-                                並增進了多元交流的能力!
-                            </div>
-                        </div>
-                        <div className="frontEnd">
+                             <div className="frontEnd">
                             <figure className='phone'><img src={Frontend} alt="" /></figure>
                             <div className="text">
                                 <h2>互動式前端網頁訓練班</h2>
@@ -127,6 +117,17 @@ const about = () => {
                             </div>
                             <figure className='desk'><img src={Frontend} alt="" /></figure>
                         </div>
+                        <div className="korea">
+                            <figure><img src={Exchange} alt="" /></figure>
+                            <div className="text">
+                                <h2>韓國漢陽大學交換生</h2>
+                                <h4>2023/FEB-JUN</h4>
+                            </div>
+                            <div className="content">在韓國除了學習韓語外，<br></br>同時也觀察當地的設計美感與軟體介面操作，<br></br>
+                                並增進了多元交流的能力!
+                            </div>
+                        </div>
+                   
                     </div>
                     {/* work */}
                     <div className="work_wrap">

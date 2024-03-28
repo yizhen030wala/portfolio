@@ -2,13 +2,28 @@
 import Footer from '../footer/footer'
 import Header from '../nav/nav'
 import './works.scss'
+import { useEffect, useState } from "react";
+import Skeleton from './skeleton'
 //img
 import Content from '../../assets/images/viewsonic/long.png'
 import Vote from '../../assets/images/voting CH/cover.png'
 
-const work4 = () => {
+const Work4 = () => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        const timer = setTimeout(() => {
+            // setVideos(dummyData);
+            setLoading(false);
+        }, 3000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div>
+            {loading && <Skeleton />}
+
             <Header />
             <main className='portfolio png'>
                 <div className="port_content">
@@ -33,4 +48,4 @@ const work4 = () => {
     )
 }
 
-export default work4
+export default Work4

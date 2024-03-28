@@ -2,18 +2,21 @@
 import Footer from '../footer/footer'
 import Header from '../nav/nav'
 import './works.scss'
+import { useEffect, useState } from "react";
+import Skeleton from './skeleton'
+
 
 //img
 import Rallway from '../../assets/images/rallway/cover.png'
 // --
 import Branding from '../../assets/images/RETO CH/branding.png'
-import Cover1 from '../../assets/images/RETO CH/cover1.png'
+// import Cover1 from '../../assets/images/RETO CH/cover1.png'
 import Codepen from '../../assets/images/RETO CH/codepen.gif'
-import Function from '../../assets/images/RETO CH/function.png'
+// import Function from '../../assets/images/RETO CH/function.png'
 import Idea1 from '../../assets/images/RETO CH/idea (1).png'
 import Idea2 from '../../assets/images/RETO CH/idea (2).png'
 import Persona from '../../assets/images/RETO CH/persona.png'
-import ppt1 from '../../assets/images/RETO CH/ppt1.png'
+// import ppt1 from '../../assets/images/RETO CH/ppt1.png'
 import ppt2 from '../../assets/images/RETO CH/ppt2.png'
 import ppt3 from '../../assets/images/RETO CH/ppt3.png'
 import ppt4 from '../../assets/images/RETO CH/ppt4.png'
@@ -29,7 +32,7 @@ import Team from '../../assets/images/frontend.png'
 import TeamWorks from '../../assets/images/RETO CH/teamWorks.png'
 import Prograss from '../../assets/images/RETO CH/prograss.png'
 import Qurey from '../../assets/images/RETO CH/qurey.png'
-import Research from '../../assets/images/RETO CH/research.png'
+// import Research from '../../assets/images/RETO CH/research.png'
 import Survey2 from '../../assets/images/RETO CH/survey2.png'
 import wireframe from '../../assets/images/RETO CH/wireframe.png'
 import Def from '../../assets/images/RETO CH/def.png'
@@ -39,9 +42,21 @@ import Feature from '../../assets/images/RETO CH/feature.gif'
 import Thanks from '../../assets/images/thanks.gif'
 
 
-const work1 = () => {
+const Work1 = () => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        const timer = setTimeout(() => {
+            // setVideos(dummyData);
+            setLoading(false);
+        }, 3000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div>
+            {loading && <Skeleton />}
             <Header />
             <div className="top">
                 <div className="porject_info">
@@ -166,12 +181,16 @@ const work1 = () => {
 
                             </p>
                             <ol>
-                                <li>使用上是否有效順暢<br></br>(能否確實減少規劃與整理行程的時間)</li>
-                                <li>RWD與動效樣式會不會很麻煩<br></br>(留給我們寫程式的時間有限)</li>
+                                <li>使用上是否有效順暢
+                                    {/* <br></br>(能否確實減少規劃與整理行程的時間) */}
+                                </li>
+                                <li>RWD與動效樣式會不會很麻煩
+                                    {/* <br></br>(留給我們寫程式的時間有限) */}
+                                </li>
                                 <li>品牌視覺如何呈現</li>
                             </ol>
                             <p>
-                                隨著開發過程，部分的細部設計有些小變動，但根據上述的準則，在區域組成上沒有太大的變化！<br></br>雖然在部分動效與功能的部分...最後還是有點挑戰我的組員就是了ˊ ˇˋ。</p>
+                                隨著開發過程，部分的細部設計有些小變動，但根據上述的準則，在區域組成上沒有太大的變化！<br></br>雖然在部分動效與功能的部分...最後還是有點耗時就是了ˊ ˇˋ。</p>
                         </div>
                         <hr />
                         <div className="content_wrap">
@@ -192,8 +211,11 @@ const work1 = () => {
                             <img src={Seacrh} alt="search" />
                         </div>
 
-                        <p>加入/建立行程燈箱</p>
-                        <img src={ppt6} alt="UI 6" />
+                        <div className="img_comment">
+                            <img src={ppt6} alt="UI 6" />
+                            <p>加入/建立行程燈箱</p>
+
+                        </div>
                         <div className="content_wrap">
                             <h2>我的景點頁面(顯示收藏地點)</h2>
                             <p>
@@ -216,8 +238,12 @@ const work1 = () => {
                         <img src={ppt9} alt="UI 9" />
                         <p>而對於規劃新手或是計畫控來說，他們能夠在同一個產品中編輯行李清單，這部分也提供按下行程就出現相對應的行李list。</p>
                         <img src={ppt10} alt="UI 10" />
-                        <p>行程路線介面</p>
-                        <img src={ppt11} alt="UI 11" />
+                        <div className="img_comment">
+                            <img src={ppt11} alt="UI 11" />
+                            <p>行程路線介面</p>
+
+                        </div>
+
 
                         <div className="content_wrap">
                             <h2>最終結果</h2>
@@ -230,7 +256,7 @@ const work1 = () => {
                         <div className="content_wrap">
                             <h2>學習心得</h2>
                             <p>
-                                整個專題中，小組每個人同時都是設計師、工程師，也是產品經理的角色，因此我們前期討論花費了蠻多的時間與技術確認，想法不一致時經常需要花時間說服組員，也多虧他們帶來許多靈感。
+                                整個專題中，小組每個人隨時都能參與設計師、工程師，甚至是產品經理的角色，因此我們前期討論花費了蠻多的時間與技術確認，想法不一致時經常需要花時間說服組員，也多虧他們帶來許多靈感。
                                 <div className="UI_wrap team">
                                     {/* <img src={TeamWorks} alt="" />
                                     <img src={Team} alt="" /> */}
@@ -251,7 +277,7 @@ const work1 = () => {
                                     </div>
                                 </div>
                                 <br></br>
-                                過程中我以製作出「自己也會想使用的產品」為目標，盡量模擬一個真實的小工作室，去考慮產品以怎麼樣的模式可能比較能快速賺錢、時間進度等，後期趕進度時也每天會分享自己的進度，來確保任務的透明化，以及確認我能夠支援的部分有哪些。
+                                過程中我以製作出「自己也會想使用的產品」為目標，盡量模擬一個真實的小工作室，去考慮產品以怎麼樣的模式可能比較能快速回收成本、時間進度等，後期趕進度時也每天會分享自己的進度，來確保任務的透明化，以及確認我能夠支援的部分有哪些。
                                 <br></br>
                                 最後，參與這個課程確實讓我學習跟熟練的規範設計，以及如何在設計與實際開發之間做調整與溝通。<br></br>
                                 在整個過程中，我也盡量尋找時間、資源、限制與目標之間的平衡點，再根據以上資訊決定產品功能設計&開發的優先順序。
@@ -286,4 +312,4 @@ const work1 = () => {
     )
 }
 
-export default work1
+export default Work1
