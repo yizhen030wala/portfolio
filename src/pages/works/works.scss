@@ -208,6 +208,9 @@ main.portfolio.reto {
         gap: 4rem;
         padding: 50px 5vh !important;
         // width: 70%;
+        .link_title{
+            @include link_title;
+        }
 
         h2 {
             color: #3D9D35;
@@ -232,13 +235,25 @@ main.portfolio.reto {
             box-shadow: none;
             border-radius: 0px;
         }
+        .HMW{
+            background-color: $color_gray;
+            padding: 10px;
+            li{
+                font-size: 16px !important;
+                line-height: 150%
+            }
+            p{
+                font-size: 16px !important;
+                line-height: 200%
+            }
 
+        }
         .content_wrap {
             @include showFlex_column;
             gap: 1rem;
 
             ol {
-                list-style: decimal;
+                // list-style: decimal;
 
                 li {
                     font-size: 20px;
@@ -263,6 +278,7 @@ main.portfolio.reto {
                 @include showFlex_row;
                 justify-content: space-between;
                 gap: 30px;
+                // flex-wrap: wrap;
 
                 .box {
                     h2 {

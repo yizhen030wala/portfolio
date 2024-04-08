@@ -178,3 +178,11 @@ $border_radius_20px: 20px;
 @mixin icon_14px {
     @include size(14px, 14px);
 }
+// ====================================================================================
+@mixin link_title{
+    font-size: 24px;
+    background-color: #d5ead3;
+    color: $color_deep_gray2;
+    padding: 10px 5px;
+
+}
