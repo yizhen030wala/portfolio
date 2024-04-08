@@ -193,6 +193,7 @@ main.portfolio.png {
 
 // ===================
 main.portfolio.reto {
+    position: relative;
     .porject_info {
         .col {
             .row {
@@ -201,6 +202,28 @@ main.portfolio.reto {
                 }
             }
         }
+    }
+    .position_control{
+        position: absolute;
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+        // background-color: $color_white;
+        @include showFlex_column;
+        opacity: 50%;
+        a{
+            color: #3D9D35;
+            opacity: 50%;
+            // text-align: center;
+            &:hover{
+                opacity: 100%;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            display: none;
+
+        }
+
     }
 
     .text_wrap {

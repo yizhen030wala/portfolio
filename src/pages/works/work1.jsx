@@ -94,7 +94,16 @@ const Work1 = () => {
                 </div>
             </div>
             <main className='portfolio reto'>
-
+                <div className="position_control">
+                    <a href="#reto_1">概覽</a>
+                    <a href="#reto_2">釐清目標</a>
+                    <a href="#reto_3">研究分析</a>
+                    <a href="#reto_4">收斂定義</a>
+                    <a href="#reto_5">發想解法</a>
+                    <a href="#reto_6">設計交付</a>
+                    <a href="#reto_7">最終結果</a>
+                    <a href="#reto_8">反思與學習</a>
+                </div>
                 <div className="port_content">
 
                     <div className="text_wrap">
