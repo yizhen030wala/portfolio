@@ -41,6 +41,8 @@ import UserMap from '../../assets/images/RETO CH/usermap.png'
 import Seacrh from '../../assets/images/RETO CH/seacrh.gif'
 import Feature from '../../assets/images/RETO CH/feature.gif'
 import Thanks from '../../assets/images/thanks.gif'
+import Compare from '../../assets/images/RETO CH/compare.png'
+import Functional from '../../assets/images/RETO CH/functional.png'
 
 
 const Work1 = () => {
@@ -162,6 +164,21 @@ const Work1 = () => {
 
                         <h2 className="link_title" id='reto_3'>🌱研究分析</h2>
 
+                        <div className="content_wrap">
+                            <h2>◾競品分析</h2>
+                            <p>在發想前期，我們透過競品分析的方式，來借鑑競品的優點，發想產品功能與設計。</p>
+                            <p><b>競品選擇：</b>我們主要針對市場上易用性高的競品為主，同時參考海外產品的技術。</p>
+                            <p><b>資料收集：</b>我們除了自身體驗競品外，也參考網路上的評論等二手資料，並請周遭朋友、同學分享競品的優缺點。</p>
+                            <img src={Compare} alt="問卷" />
+                            <p>我們發現：</p>
+                            <ol>
+                                <li>🔘地點資料建立在產品自己的地圖資料庫中，因而難以找到冷門景點或最新景點</li>
+                                <li>🔘路線對應的地圖沒有對應不同國家的主要地圖</li>
+                                <li>🔘行程表內筆記顯示不明顯，也不多元</li>
+                            </ol>
+                        </div>
+
+
                         {/* <p>我們使用問卷分析的方式，了解使用者的輪廓與尋找、驗證痛點。</p> */}
                         <div className="content_wrap">
                             <h2>◾問卷調查</h2>
@@ -185,11 +202,30 @@ const Work1 = () => {
                             <br></br>在功能面上，<b>「方面編輯」</b>、<b>「大量的景點能選擇」</b>以及<b>「人性化的網頁操作」</b>依序為使用者們所注重的主要面向。
                         </p>
                         <img src={Survey2} alt="痛點" />
+                        <div className="content_wrap">
+                            <h2>◾研究洞察</h2>
+                            <div className="HMW">
+                                <h3>🗣️共編過程不盡理想</h3>
+                                <p>"辛苦編輯好的行程被旅伴隨意更動時，反而會有挫折感"
+                                </p>
+                            </div>
+                            <div className="HMW">
+                                <h3>🗣️行程緊急變動時需要備案</h3>
+                                <p>"店家營業時間和網路上的不同導致行程需要變動"、"怕下雨還要想雨備"
+                                </p>
+                            </div>
+                            <div className="HMW">
+                                <h3>🗣️交通資訊不夠即時和充足</h3>
+                                <p>"給予的交通載具資訊較少"、"沒有大眾交通工具的即時動態"、"只有大城市的景點比較多"
+                                </p>
+                            </div>
+                            {/* <div className="HMW">
+                                <h3>結合簡易記事需求</h3>
+                                <p>我們的設計融合記事、清單等功能，減少使用者切換平台的次數
+                                </p>
+                            </div> */}
+                        </div>
 
-                        {/* <h2>◾研究洞察</h2> */}
-                        {/* <p>過程中我們使用Figjam做發想與溝通idea，並根據所收集到的問卷分析結果，決定最終的wireframem、UI flow與funcitonal map。
-                        </p>
-                        <img src={Idea2} alt="" /> */}
 
                         <h2 className="link_title" id='reto_4'>🌱收斂定義</h2>
                         <p>根據問卷分析結果，我也歸納出三種使用者受眾的輪廓，分別為<b>「隨性懶人」</b>、<b>「規劃新手」</b>、<b>「計畫控」</b>，以及他們可能會使用旅藤的機會點與使用情境。</p>
@@ -227,6 +263,16 @@ const Work1 = () => {
 
                         <hr />
                         <h2 className="link_title" id='reto_5'>🌱發想解法</h2>
+                        
+                        
+                        <div className="content_wrap">
+                            <h2>◾Functional map</h2>
+                            <p>因為開發能量有限，我們將功能分為<b
+                            >主要</b>、<b
+                            >次要</b>、<b
+                            >非必須</b>等功能。</p>
+                        </div>
+                        <img className="design" src={Functional} alt="Functional" />
 
                         <div className="content_wrap">
                             <h2>◾UI flow</h2>
@@ -366,7 +412,7 @@ const Work1 = () => {
                                     參與這個課程讓我學習跟熟練規範設計之外，也了解產品開發時的流程，如何在設計與實際開發之間做調整與溝通等等。<br></br>
 
                                     在整個過程中，我也盡量尋找時間、資源、限制與目標之間的平衡點，再根據以上資訊，決定產品功能設計和開發的優先順序。<br></br>
-                                    透過合作，我相信能夠更好的發揮各自的專長，能夠見證自己的設計化為能夠真正互動的產品時，也得到滿滿的成就感。
+                                    透過合作，我相信能夠更好的發揮各自的專長，見到自己的設計化為能夠真正互動的產品時，也得到滿滿的成就感。
                                 </p>
                             </div>
                             <div className="HMW">
