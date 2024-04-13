@@ -7,6 +7,7 @@ import {
     NavLink,
 } from "react-router-dom";
 
+
 function Header() {
     const [position, setPosition] = useState(window.scrollY)
     // console.log(`position:${position}`);
@@ -53,6 +54,8 @@ function Header() {
         zIndex: 1000,
         transition: 'background-color 0.3s ease',
     };
+
+   
 
 
 

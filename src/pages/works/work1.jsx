@@ -43,7 +43,9 @@ import Feature from '../../assets/images/RETO CH/feature.gif'
 import Thanks from '../../assets/images/thanks.gif'
 import Compare from '../../assets/images/RETO CH/compare.png'
 import Functional from '../../assets/images/RETO CH/functional.png'
-
+import UseTest from '../../assets/images/RETO CH/useTest.png'
+import Change1 from '../../assets/images/RETO CH/change1.png'
+import Change2 from '../../assets/images/RETO CH/change2.png'
 
 const Work1 = () => {
     const [loading, setLoading] = useState(false);
@@ -103,7 +105,7 @@ const Work1 = () => {
                     <a href="#reto_4">收斂定義</a>
                     <a href="#reto_5">發想解法</a>
                     <a href="#reto_6">設計交付</a>
-                    <a href="#reto_7">最終結果</a>
+                    <a href="#reto_7">測試驗證</a>
                     <a href="#reto_8">反思與學習</a>
                 </div>
                 <div className="port_content">
@@ -263,8 +265,8 @@ const Work1 = () => {
 
                         <hr />
                         <h2 className="link_title" id='reto_5'>🌱發想解法</h2>
-                        
-                        
+
+
                         <div className="content_wrap">
                             <h2>◾Functional map</h2>
                             <p>因為開發能量有限，我們將功能分為<b
@@ -320,7 +322,7 @@ const Work1 = () => {
                         {/* <hr /> */}
                         <div className="content_wrap">
                             <h2>◾首頁設計</h2>
-                            <p>原先組員也提出以搜尋頁面作為首頁的解法，但在這部分，我提出因為旅藤作為一個工具型的產品，需要使用上的引導，因此需要另外做一個首頁來說明旅藤的特色與使用步驟。</p>
+                            <p>原先組員也提出以搜尋頁面作為首頁的解法，但經過討論後，我們認為旅藤作為一個工具型的產品，需要使用上的引導，因此需要另外做一個首頁來說明旅藤的特色與使用步驟。</p>
                         </div>
                         <img src={ppt4} alt="UI 1" />
                         <p>首頁特點區域互動特效：<br></br>
@@ -329,7 +331,7 @@ const Work1 = () => {
                         <img src={Feature} alt="特色" />
                         <div className="content_wrap">
                             <h2>◾搜索頁設計</h2>
-                            <p>在搜索頁的部分，我將景點分類成「吃」、「住」、「景點」三大項，使用者可以點擊/拖曳來切換景點分類，分類大項中也有子分類可以做篩選，並使用瀑布流方式來瀏覽、選擇景點。</p>
+                            <p>在搜索頁的部分，將景點分類成「吃」、「住」、「景點」三大項，使用者可以點擊/拖曳來切換景點分類，分類大項中也有子分類可以做篩選，並使用瀑布流方式來瀏覽、選擇景點。</p>
                         </div>
                         <div className="UI_wrap">
                             <img src={ppt5} alt="UI 5" />
@@ -344,7 +346,7 @@ const Work1 = () => {
                         <div className="content_wrap">
                             <h2>◾我的景點頁面(顯示收藏地點)</h2>
                             <p>
-                                前期規劃時，針對這個頁面該放在會員資訊內、還是放在導覽列，我們有蠻多的討論；最後我提出目前以MVP的模式下，會員並沒有許多資訊需要匯集成一個單獨的頁面，並且考慮到將收藏景點放在導覽列中能夠增加跨區旅遊的方便性，因此最後將此頁面的入口放在導覽列。
+                                前期規劃時，針對這個頁面該放在會員資訊內、還是放在導覽列，我們有蠻多的討論；最後我提出以MVP的模式下，會員並沒有太多資訊需要匯集成一個單獨的頁面，並且考慮到將收藏景點放在導覽列中能夠增加跨區旅遊的方便性，因此最後將此頁面的入口放在導覽列。
                                 {/* <br></br> */}
 
                             </p>
@@ -369,16 +371,25 @@ const Work1 = () => {
 
                         </div> */}
 
-
                         <div className="content_wrap">
-                            <h2 className="link_title" id='reto_7'>🌱最終結果</h2>
+                            <h2 className="link_title" id='reto_7'>🌱測試驗證</h2>
+                            <h2>◾易用性測試</h2>
+                            <p>測試方式以快速迭代的方式進行，透過兩三位受測者的反應來修正設計，依序解決設計盲點。</p>
+                            <img className='design' src={UseTest} alt="" />
+                            <h2>◾迭代優化</h2>
+                            <img src={Change1} alt="" />
+                            <img src={Change2} alt="" />
+
+                        </div>
+                        {/* <div className="content_wrap">
+                            <h2 className="link_title" id='reto_8'>🌱最終結果</h2>
 
                             <p>最終我們時間限制與技術關係，來不及在結業前完成作品，目前大概完成了65%左右。我們也試著用資料庫帶入真實的地點資訊進去，雖然還有部分編輯上的功能沒有完成，但還是歡迎觀看！</p>
                             <a href="https://retoproject2.onrender.com/">成果連結</a>
                             <p>
                                 而在驗證的部分，目前則是考慮使用portopie做行程編輯頁互動上的易用性測試，組員們也表示即使結業了，也希望能完成旅藤這個專案，若有機會的話也會想放hotjar做整個規劃行程流程的測試。
                             </p>
-                        </div>
+                        </div> */}
                         <div className="content_wrap">
                             <h2 className="link_title" id='reto_8'>🌱反思與學習</h2>
                             <p>
@@ -418,8 +429,8 @@ const Work1 = () => {
                             <div className="HMW">
                                 <h3>🤔進一步了解使用者的需求與產品驗證</h3>
                                 <p>
-                                    在這個案子中，我盡量注重透過設計來達到良好的功能體驗與使用目的。然而，真正的產品應該透過測試與反饋，才能漸漸貼近使用者的需求，正式開發前的測試也是重要的一環。<br></br>
-                                    缺少了質性研究與產品測試，我在設計過程中也經常會對自己提問：設計方向是使用者需要的嗎？此時只能在回到問卷分析的結果中，確認自己的設計方向。<br></br>
+                                    在這專題中，我盡量注重透過設計來達到良好的功能體驗與使用目的。然而，真正的產品應該透過測試與反饋，才能漸漸貼近使用者的需求，正式開發前的測試也是重要的一環。<br></br>
+                                    同時也了解，易用性測試的情境與背景測試能夠降低受測者在測試時的困惑程度(特別是使用Hi-Fi prototype做測試時)，並在時間允許時，使用wireframe做易用性測試能夠更好的讓受測者集中在任務上。<br></br>
                                     相信透過這次實做整個開發流程，未來在設計介面時我能夠更好的分析、設計、測試並迭代產品。
                                 </p>
                             </div>

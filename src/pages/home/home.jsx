@@ -41,7 +41,7 @@ const index = ({ showMainContent }) => {
 
           </div>
 
-          <div className="works">
+          <div className="works" id='#Home-works-section'>
             <div className="title"><img src={title} alt="" /></div>
 
             <div className="container">
