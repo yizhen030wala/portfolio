@@ -111,12 +111,7 @@ const Work1 = () => {
                 <div className="port_content">
 
                     <div className="text_wrap">
-                        {/* <div className="content_wrap">
-                            <h2>產品背景</h2>
-                            <p>旅藤是一個能快速規劃旅程、且輕便單純的產品。<br></br>
-                                在旅藤中，使用者能使用視覺化的方式，更快速的選擇與決定、替換景點，並一次安排行程順序與路線。
-                            </p>
-                        </div> */}
+                  
                         <h2 className="link_title" id='reto_1'>🌱概覽</h2>
 
                         <div className="goals_wrap">
@@ -144,6 +139,12 @@ const Work1 = () => {
 
 
                         <hr />
+                        <div className="content_wrap">
+                            <h2>◾產品背景</h2>
+                            <p>旅藤是一個能快速規劃旅程、且輕便單純的產品。<br></br>
+                                在旅藤中，使用者能使用視覺化的方式，更快速的選擇與決定、替換景點，並一次安排行程順序與路線。
+                            </p>
+                        </div>
                         <h2>◾設計流程</h2>
                         <img className='design' src={Prograss} alt="設計流程" />
                         <h2 className="link_title" id='reto_2'>🌱釐清目標</h2>
@@ -176,7 +177,7 @@ const Work1 = () => {
                             <ol>
                                 <li>🔘地點資料建立在產品自己的地圖資料庫中，因而難以找到冷門景點或最新景點</li>
                                 <li>🔘路線對應的地圖沒有對應不同國家的主要地圖</li>
-                                <li>🔘行程表內筆記顯示不明顯，也不多元</li>
+                                <li>🔘行程表內筆記顯示不明顯，筆記格式較單一</li>
                             </ol>
                         </div>
 

@@ -268,7 +268,7 @@
                 // }
 
                 figure {
-                    height: 60%;
+                    height: 50%;
                     overflow: hidden;
                     border-radius: $border_radius_15px;
                 }
@@ -292,6 +292,13 @@
                 .content {
                     font-size: 16px !important;
                     height: 40%;
+                    ol {
+                        li {
+                            list-style: circle;
+                            margin: 10px;
+                            margin-left: 16px;
+                        }
+                    }
 
                 }
             }

@@ -102,18 +102,23 @@ const about = () => {
                     <h2>我的經歷</h2>
                     {/* 2024 */}
                     <div className="lastYear">
-                             <div className="frontEnd">
+                        <div className="frontEnd">
                             <figure className='phone'><img src={Frontend} alt="" /></figure>
                             <div className="text">
                                 <h2>互動式前端網頁訓練班</h2>
                                 <h4>2023/Nov-2024/Feb
                                 </h4>
                             </div>
-                            <div className="content">因為希望自己能掌握更多程式邏輯，做介面設計與電子信等能夠讓想法實現與更加自由，
-                                因此報名此課程，從介面設計到使用 React 前端框架等，與組員合作產出專題作品。
-                                <br></br>
-                                在此專題中，我主要擔任 UI/UX Designer，設計 UI Flow, layout, prototype 與 Design guideline，
-                                並協助兩位工程師組員撰寫 RWD 與建立程式設計規範。
+                            <div className="content">
+                                在此專題中，我主要擔任 <b>UI/UX Designer</b>，與兩位前端工程師組員合作。主要任務包括：<br></br>
+
+                                <ol>
+                                    <li>設計 UI Flow、Design guideline</li>
+                                    <li>UI layout</li>
+                                    <li>prototype</li>
+                                    <li>建立程式設計規範、協助撰寫RWD</li>
+                                </ol>
+                                透過專題，加強了組件設計的規劃認知與產品規劃邏輯，並了解 React 前端框架建立等概念。
                             </div>
                             <figure className='desk'><img src={Frontend} alt="" /></figure>
                         </div>
@@ -123,11 +128,17 @@ const about = () => {
                                 <h2>韓國漢陽大學交換生</h2>
                                 <h4>2023/FEB-JUN</h4>
                             </div>
-                            <div className="content">在韓國除了學習韓語外，<br></br>同時也觀察當地的設計美感與軟體介面操作，<br></br>
-                                並增進了多元交流的能力!
+                            <div className="content">2023年申請到韓國漢陽大學交換，主要目標為：<br></br>
+                                <ol>
+                                    <li>學習韓文與了解文化</li>
+                                    <li>了解韓國軟體介面美感與使用體驗</li>
+                                </ol>
+                                也結識來自德國、法國、中國、韓國與丹麥的朋友，<br></br>
+                                真切拓展了文化視野、差異，<br></br>
+                                收穫了無法取代的寶貴回憶與語言能力！
                             </div>
                         </div>
-                   
+
                     </div>
                     {/* work */}
                     <div className="work_wrap">
@@ -144,9 +155,13 @@ const about = () => {
                                     <h4 className='day'>2022/Jan-Sep</h4>
                                 </div>
                                 <div className="bottom">
-                                    <span> ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM電子信與影片剪輯等製作，提昇了頻道影片120%的觀看次數，也依照公司/部門的設計規範製作口罩、衣服圖樣等周邊物。</span>
+                                    在 ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM 電子信與影片剪輯等製作，包括：<br></br>
 
-                                    <br></br>
+                                    <ol>
+                                        <li><b>社群媒體製作：</b>負責製作行銷相關的社群貼文，宣傳產品使用方法，也製作活動背板，提供參與者拍照，提升曝光度。</li>
+                                        <li><b>影片剪輯：</b>製作公司頻道的影片，並成功提昇了影片觀看次數 120%。</li>
+                                        <li><b>周邊物設計：</b>根據公司/部門的設計規範，製作口罩、衣服圖樣等周邊物品，提升品牌形象。</li>
+                                    </ol>
                                     獨立製作過：<br></br>
                                     <ol>
                                         <li> 教育科技展：主視覺、活動網頁UI、展覽周邊物，並協助展覽當日活動舉行。</li>
@@ -173,8 +188,13 @@ const about = () => {
                                     <h4 className='day'>2021/Sep-Dec</h4>
                                 </div>
                                 <div className="bottom">
-                                    使用遠距的方式與南非僑生進行華語教學，<br></br>
-                                    透過觀察學生來客製化教材與教學活動發想等。
+                                    主要以遠距的方式與南非德本學校的僑生進行華語教學，主要任務包括：<br></br>
+                                    <ol>
+                                        <li>擬定教學計劃</li>
+                                        <li>客製教材與活動</li>
+                                        <li>學生強弱項、活動反應觀察紀錄</li>
+                                    </ol>
+                                    最終達成教學目標，並獲得班導師認同。
                                 </div>
                             </div>
                             <div className="c"><img src={Teaching} alt="" /></div>
@@ -193,7 +213,12 @@ const about = () => {
                                     <h4 className='day'>2018 - 2019</h4>
                                 </div>
                                 <div className="bottom">
-                                    習得專案企劃發想、以及媒體行銷相關知識，<br></br>
+                                    在未來自造所該企劃中習得：<br></br>
+                                    <ol>
+                                        <li>專案企劃發想</li>
+                                        <li>專案製作執行</li>
+                                        <li>行銷相關知識</li>
+                                    </ol>
                                     並運用學習內容規劃發想綠能企劃專案。
                                 </div>
                             </div>

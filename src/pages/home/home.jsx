@@ -76,7 +76,8 @@ const index = ({ showMainContent }) => {
                     <div className="info_top">
                       <h4>2023</h4>
                       <h1>台鐵列車動態 redesign</h1>
-                      <h4>身為五年的APP使用者，發現更好用的APP後，便做了redesign。</h4>
+                      <h4>Redesign主要主頁中增加<b>快速預覽車次的功能</b>，幫助使用者在<b>通勤趕車時</b>，可以<b>不再手忙腳亂找車次</b>，解決焦慮、慌忙的感覺
+                      </h4>
                       <div className="tag_wrap">
                         <div className="tag">UIUX</div>
                         <div className="tag">原型設計</div>
