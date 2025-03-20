@@ -47,7 +47,7 @@ main.home {
 
                 .slogan {
                     margin-bottom: 0.5rem;
-                    
+
                     img {
                         max-width: 90%;
                         height: auto;
@@ -82,7 +82,8 @@ main.home {
                     width: 100%;
                     max-width: 300px;
 
-                    .btn_black, .btn_white {
+                    .btn_black,
+                    .btn_white {
                         padding: 1rem 2rem;
                         border-radius: $border_radius_10px;
                         display: flex;
@@ -101,6 +102,7 @@ main.home {
                     .btn_black {
                         background: $color_black;
                         color: $color_white;
+
                         &:hover {
                             background: $color_deep_gray3;
                         }
@@ -109,6 +111,7 @@ main.home {
                     .btn_white {
                         background: $color_white;
                         color: $color_black;
+
                         &:hover {
                             background: $color_gray;
                         }
@@ -124,13 +127,17 @@ main.home {
                 padding: 10vh 0 5vh;
                 @include showFlex_column;
                 gap: 3rem;
-                
+
                 /* 隱藏滾動條但保持滾動功能 */
                 &::-webkit-scrollbar {
-                    display: none; /* Chrome, Safari, Opera */
+                    display: none;
+                    /* Chrome, Safari, Opera */
                 }
-                -ms-overflow-style: none;  /* IE and Edge */
-                scrollbar-width: none;  /* Firefox */
+
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
 
                 .work_card {
                     background: $color_white;
@@ -141,7 +148,7 @@ main.home {
                     min-height: 500px;
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                     cursor: pointer;
-                    
+
                     &:hover {
                         transform: translateY(-5px);
                     }
@@ -156,7 +163,7 @@ main.home {
                         .content_top {
                             @include showFlex_column;
                             gap: 1.5rem;
-                        
+
                             .card_header {
                                 @include showFlex_column;
                                 gap: 0.5rem;
@@ -221,7 +228,7 @@ main.home {
                                 transition: all 0.3s ease;
                                 text-align: center;
                                 width: 100%;
-                                
+
                                 &:hover {
                                     background: $color_deep_gray3;
                                 }
@@ -229,12 +236,32 @@ main.home {
                         }
                     }
 
+
+
                     .card_image {
                         width: 50%;
+                        position: relative;
+
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                        }
+
+                        .password_overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5); // 灰色透明遮罩
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            font-size: 1.25rem;
+                            font-weight: bold;
+                            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
                         }
                     }
                 }
@@ -249,85 +276,85 @@ main.home {
 }
 
 .password_modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 
-  .modal_content {
-    background: $color_white;
-    padding: 2rem;
-    border-radius: $border_radius_15px;
-    width: 90%;
-    max-width: 400px;
-    @include showFlex_column;
-    gap: 1.5rem;
+    .modal_content {
+        background: $color_white;
+        padding: 2rem;
+        border-radius: $border_radius_15px;
+        width: 90%;
+        max-width: 400px;
+        @include showFlex_column;
+        gap: 1.5rem;
 
-    h3 {
-      text-align: center;
-      font-size: 1.5rem;
-    }
-
-    input {
-      padding: 0.75rem;
-      border: 1px solid $color_deep_gray3;
-      border-radius: $border_radius_10px;
-      font-size: 1rem;
-      width: 100%;
-
-      &:focus {
-        outline: none;
-        border-color: $color_black;
-      }
-    }
-
-    .password_hint {
-      color: #666;
-      font-size: 14px;
-      margin: 8px 0;
-      text-align: center;
-    }
-
-    .modal_buttons {
-      @include showFlex_row;
-      gap: 1rem;
-      justify-content: center;
-
-      button {
-        padding: 0.75rem 2rem;
-        border-radius: $border_radius_10px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:first-child {
-          background: $color_black;
-          color: $color_white;
-          border: none;
-
-          &:hover {
-            background: $color_deep_gray3;
-          }
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
         }
 
-        &:last-child {
-          background: $color_white;
-          color: $color_black;
-          border: 1px solid $color_black;
+        input {
+            padding: 0.75rem;
+            border: 1px solid $color_deep_gray3;
+            border-radius: $border_radius_10px;
+            font-size: 1rem;
+            width: 100%;
 
-          &:hover {
-            background: $color_gray;
-          }
+            &:focus {
+                outline: none;
+                border-color: $color_black;
+            }
         }
-      }
+
+        .password_hint {
+            color: #666;
+            font-size: 14px;
+            margin: 8px 0;
+            text-align: center;
+        }
+
+        .modal_buttons {
+            @include showFlex_row;
+            gap: 1rem;
+            justify-content: center;
+
+            button {
+                padding: 0.75rem 2rem;
+                border-radius: $border_radius_10px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:first-child {
+                    background: $color_black;
+                    color: $color_white;
+                    border: none;
+
+                    &:hover {
+                        background: $color_deep_gray3;
+                    }
+                }
+
+                &:last-child {
+                    background: $color_white;
+                    color: $color_black;
+                    border: 1px solid $color_black;
+
+                    &:hover {
+                        background: $color_gray;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 //===================RWD============================
@@ -359,7 +386,7 @@ main.home {
                         .desktop-text {
                             display: none;
                         }
-                        
+
                         .mobile-text {
                             display: block;
                         }
@@ -368,7 +395,7 @@ main.home {
                     p {
                         font-size: 1.25rem;
                         margin-bottom: 0.5rem;
-                        
+
                         .highlight {
                             padding: 0.1rem 0.4rem;
                         }

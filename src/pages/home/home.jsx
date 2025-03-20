@@ -17,6 +17,8 @@ const index = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
+  const isProtected = true; // 定義變數
+
 
   const handlePasswordSubmit = (projectPath) => {
     if (password === '0908035057') {
@@ -63,13 +65,13 @@ const index = () => {
 
             <div className="works_wrap">
               {/* Project 1 - RETO */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/reto', true)}>
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/reto', isProtected)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
-                      <span className="company">ABC 科技公司</span>
-                      <h2 className="card_title">電商網站設計</h2>
-                      <span className="date">2023.06 - 2023.12</span>
+                      <span className="company">柏瑞醫股份有限公司</span>
+                      <h2 className="card_title">OsteoCloud 影像分析平台</h2>
+                      <span className="date">2025.02 - now</span>
                     </div>
                     <p className="card_desc">為知名品牌打造的電商平台，包含會員式電商設計、購物車功能和會員系統。</p>
                   </div>
@@ -84,17 +86,22 @@ const index = () => {
                 </div>
                 <div className="card_image">
                   <img src={RETO} alt="RETO旅藤" />
+                  {isProtected && (
+                    <div className="password_overlay">
+                      <span className="lock_message">需要密碼</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
               {/* Project 2 - Company Project */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/rallway', true)}>
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/rallway', isProtected)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
-                      <span className="company">XYZ 企業集團</span>
-                      <h2 className="card_title">企業形象網站</h2>
-                      <span className="date">2023.01 - 2023.05</span>
+                      <span className="company">柏瑞醫股份有限公司</span>
+                      <h2 className="card_title">X1 Pro 放射影像拍攝與分析平台</h2>
+                      <span className="date">2024.06 - 2024.12</span>
                     </div>
                     <p className="card_desc">重新設計企業官網，提升品牌形象並優化用戶體驗。</p>
                   </div>
@@ -109,41 +116,19 @@ const index = () => {
                 </div>
                 <div className="card_image">
                   <img src={Rallway} alt="企業形象網站" />
+                  <div className="password_overlay">
+                      <span className="lock_message">需要密碼</span>
+                    </div>
                 </div>
               </div>
 
-              {/* Project 3 - Vote */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/vote', false)}>
-                <div className="card_content">
-                  <div className="content_top">
-                    <div className="card_header">
-                      <span className="company">六角學院</span>
-                      <h2 className="card_title">總統開票地圖</h2>
-                      <span className="date">2023</span>
-                    </div>
-                    <p className="card_desc">THE F2E 參賽作品，入圍佳作。透過互動式地圖呈現選舉結果。</p>
-                  </div>
-                  <div className="content_bottom">
-                    <div className="tag_wrap">
-                      <span className="tag">UIUX</span>
-                      <span className="tag">原型設計</span>
-                      <span className="tag">設計規範</span>
-                    </div>
-                    <div className="card_button">查看更多</div>
-                  </div>
-                </div>
-                <div className="card_image">
-                  <img src={Vote} alt="總統開票地圖" />
-                </div>
-              </div>
-
-              {/* Project 4 - ViewSonic */}
+              {/* Project 3 - ViewSonic */}
               <div className="work_card" onClick={() => handleProjectClick('/portfolio/viewsonic', false)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
-                      <span className="company">ViewSonic</span>
-                      <h2 className="card_title">ViewSonic作品集</h2>
+                      <span className="company">島島阿學</span>
+                      <h2 className="card_title">島島阿學-學習任務規劃模組</h2>
                       <span className="date">2022.01 - 2022.09</span>
                     </div>
                     <p className="card_desc">實習期間完成的各類設計作品，包含品牌設計、行銷物料等。</p>
@@ -161,11 +146,39 @@ const index = () => {
                   <img src={ViewSonic} alt="ViewSonic作品集" />
                 </div>
               </div>
+              {/* Project 4 - RETO */}
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/reto', false)}>
+                <div className="card_content">
+                  <div className="content_top">
+                    <div className="card_header">
+                      <span className="company">side porject</span>
+                      <h2 className="card_title">旅藤-旅遊規劃平台</h2>
+                      <span className="date">2023.06 - 2023.12</span>
+                    </div>
+                    <p className="card_desc">為知名品牌打造的電商平台，包含會員式電商設計、購物車功能和會員系統。</p>
+                  </div>
+                  <div className="content_bottom">
+                    <div className="tag_wrap">
+                      <span className="tag">設計並實現買賣雙方電商界面</span>
+                      <span className="tag">提升移動端購物體驗</span>
+                      <span className="tag">優化購物流程，轉換率提升30%</span>
+                    </div>
+                    <div className="card_button">查看更多</div>
+                  </div>
+                </div>
+                <div className="card_image">
+                  <img src={RETO} alt="RETO旅藤" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <Footer />
+
+
+
+
 
       {showPassword && (
         <div className="password_modal">
