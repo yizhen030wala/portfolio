@@ -43,16 +43,19 @@ function Header() {
     }, []);
 
     const headerStyle = {
-        backgroundColor: isScrolled ? "rgba(255, 255, 255, 1.0)" : "transparent",
-        // borderRadius: isScrolled ? '50px' : '0',
-        backdropFilter: blur(8),
+        backgroundColor: isScrolled ? "rgba(255, 255, 255, 0.2)" : "transparent",
+        backdropFilter: isScrolled ? "blur(8px)" : "none",
+        boxShadow: isScrolled ? "0 4px 30px rgba(0, 0, 0, 0.1)" : "none",
+        borderRadius: isScrolled ? "100px" : "0",
+        margin: isScrolled ? "10px 10px" : "0",
         position: 'fixed',
-        // margin: 10,
         top: 0,
         left: 0,
-        width: '100%',
+        right: 0,
+        width: isScrolled ? "calc(100% - 20px)" : "100%",
+        height: isScrolled ? "70px" : "100px",
         zIndex: 1000,
-        transition: 'background-color 0.3s ease',
+        transition: 'all 0.3s ease-in-out',
     };
 
    
@@ -63,36 +66,51 @@ function Header() {
         <div className={cls}>
             <div className="header" style={headerStyle}>
                 {/* LOGO  */}
-
-                <a className='logo' href={`/portfolio/`}></a>
+                <a className='logo' href={`/portfolio/`}>
+                    <div className="logo_img"></div>
+                    <NavLink 
+                        to="/portfolio/" 
+                        className={`logo_text ${isScrolled ? 'visible' : ''}`}
+                        end
+                    >
+                        Jenny Chen
+                    </NavLink>
+                </a>
 
                 <div className="wrap">
                     {/* 置頂導覽按鈕  */}
                     <nav>
                         <ul className="nav_btn">
-                            <li className='btn_link' >
-                                {/* <NavLink to="/portfolio/"
-                                    className={({ isActive, isPending }) =>
-                                        isActive
-                                            ? "active"
-                                            : isPending
-                                                ? "pending"
-                                                : ""
-                                    }>
-                                    Works
-                                </NavLink> */}
+                            <li className='btn_link'>
                                 <NavLink
                                     to="/portfolio/"
-                                    className={(navData) =>
-                                        navData.isActive ? "nav-link active" : "nav-link"
+                                    end
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
                                     }
                                 >
                                     Works
                                 </NavLink>
-                                {/* <a href={`/portfolio/`}>Works</a> */}
                             </li>
-                            <li className='btn_link'><a href={`/portfolio/about`}>About me</a></li>
-                            <li className='btn_link'><a href='https://drive.google.com/file/d/1yqwU2URFxbTO7FR5rEQI93hwR_yQrsZ4/view?usp=sharing' target='_blank'>下載履歷</a></li>
+                            <li className='btn_link'>
+                                <NavLink
+                                    to="/portfolio/about"
+                                    end
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
+                                    About me
+                                </NavLink>
+                            </li>
+                            <li className='btn_link'>
+                                <a href='https://drive.google.com/file/d/1yqwU2URFxbTO7FR5rEQI93hwR_yQrsZ4/view?usp=sharing' 
+                                   target='_blank' 
+                                   className="nav-link"
+                                >
+                                    下載履歷
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     {/* nenu  */}

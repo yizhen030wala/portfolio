@@ -9,14 +9,15 @@ footer {
     @include size(100%, 30vh);
     @include row-center;
     background-color: $color_black;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10vh;
 
 
 
     .mail_wrap {
         color: $color-white;
 
-        h3 {}
+        // h3 {}
 
         a {
             color: $color-white;
@@ -32,6 +33,7 @@ footer {
     .logo_wrap {
         @include row-center;
         gap: 1rem;
+        justify-content: space-between; 
 
         .logo {
             @include size(50px, 50px);
@@ -54,6 +56,11 @@ footer {
         flex-direction: column;
         gap: 40px !important;
         justify-content: center;
+        padding: 0vh;
+
+        .logo_wrap{
+            transform: translateX(-15px);
+        }
 
     }
 }

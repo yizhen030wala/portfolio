@@ -49,14 +49,44 @@
     z-index: 800;
 
     .logo {
-        width: 3rem;
-        height: 3rem;
-        background-image: url('../../assets//images//navLogo.png');
-        background-size: cover;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 150px;
 
-        &:hover {
-            background-image: url('../../assets//images/logoHover.png');
-            rotate: 15;
+        .logo_img {
+            width: 3rem;
+            height: 3rem;
+            background-image: url('../../assets//images//navLogo.png');
+            background-size: cover;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-image: url('../../assets//images/logoHover.png');
+                rotate: 15deg;
+            }
+        }
+
+        .logo_text {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $color_black;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+            position: absolute;
+            left: 4rem;
+            white-space: nowrap;
+            pointer-events: none;
+            
+            &.visible {
+                opacity: 1;
+                transform: translateX(30%);
+            }
+
+            &:hover {
+                color: #666;
+            }
         }
     }
 
@@ -74,31 +104,23 @@
 
 
             li {
-
-                a{
+                .nav-link {
                     @include text_btn_middle;
                     font-size: 1rem;
                     background-color: $color-white;
                     color: $color_black;
+                    transition: all 0.3s ease;
 
                     &:hover {
                         background-color: $color_deep_gray2;
                         color: $color-white;
                     }
 
-                    &:active {
+                    &.active {
                         background-color: $color_deep_gray2;
                         color: $color-white;
                     }
-                    // .svg{
-                    //     @include size(24px,24px);
-                    //     fill: red;
-                    // }
-
-
                 }
-
-
             }
         }
 
