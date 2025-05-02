@@ -35,11 +35,11 @@ const about = () => {
                         <div className="left"><img src={Me} alt="" /></div>
                         <div className="right">
                             <h2>Hello，我是 Jenny 陳怡臻！</h2>
-                            <p>我是一位擅長插畫，並時常觀察生活中的細節美感的設計師。<br></br>
+                            <p>我擅長在複雜需求與多角色之間釐清核心問題，並用系統性的設計方法，協助團隊聚焦與共識收斂。面對模糊與混亂時，我會先理清資訊、拉出決策節奏，再推動具體行動，這讓我在設計初期特別能穩定團隊。<br></br><br></br>
 
-                                我擁有多元的設計能力，並熟悉多個設計軟體，期望能以使用/觀看者為中心去思考問題，讓設計的作品更發揮最大的價值與效益。<br></br>
+                            我相信好的設計不是快速產出介面，而是能真實解決問題、兼顧使用者與商業兩端。在過往 B2B 醫療與教育平台的專案中，我經常結合研究、策略與實務設計，在限制中找到機會，為團隊建立可持續迭代的基礎。<br></br><br></br>
 
-                                在實習中前輩們肯定我的製圖能力與時程管理；一起製作專題的同學朋友們則肯定我的創意發想能力、執行力與創造力。
+                            對我來說，設計不只是輸出，而是引導與對齊的過程。我樂於傾聽，也善於提出關鍵問題，讓團隊走得更清晰、更穩定。
                                 {/* <br></br>
 
                                 短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。 */}
@@ -100,6 +100,62 @@ const about = () => {
                 {/* 經歷 */}
                 <div className="experiences">
                     <h2>我的經歷</h2>
+                    <div className="work_wrap">
+                        {/* one */}
+                        <div className="work">
+                            <div className="A"><img src={Intern} alt="" />
+                            </div>
+                            <div className="b">
+                                <div className="top_About">
+                                    <div className="title">
+                                        <h3>UI/UX 設計師 </h3>
+                                        <h4> 柏瑞醫 (醫療科技公司, B2B, AI)</h4>
+                                    </div>
+                                    <h4 className='day'>2024/Jun-Now</h4>
+                                </div>
+                                <div className="bottom">
+                                在 Biomedica 中，我從業務需求、商業模式與用戶體驗出發，設計醫療影像拍攝/分析平台的使用邏輯和架構，包括：<br></br>
+
+                                    <ol>
+                                        <li><b>獨立建立 UI/UX 設計流程與標準化交付，</b>提升跨團隊溝通效率，使設計與開發方向一致。</li>
+                                        <li><b>優化醫療影像與數據管理體驗，</b>簡化檢索、分析與報告流程，幫助專業用戶更高效決策。</li>
+                                        <li><b>設計 AI 分析與自動化輔助工作流，</b>減少人工操作，提升診斷與數據分析精準度。</li>
+                                        <li><b>使用者研究：</b>透過脈絡訪談、內部 Usability Testing、Prototype 測試，優化影像管理與報告生成功能。</li>
+                                        <li><b>團隊協作：</b>和 PM、工程師協作，推動決策透明度，制定產品功能地圖與設計規範。</li>
+                                    </ol>
+                                    
+
+
+                                </div>
+                            </div>
+                            <div className="c"><img className='viewsonic' src={Intern} alt="" /></div>
+                        </div>
+                        {/* two */}
+                        <div className="work">
+                            <div className="A"><img src={Teaching} alt="" />
+                                <div className="line"></div>
+                            </div>
+                            <div className="b">
+                                <div className="top_About">
+                                    <div className="title">
+                                        <h3>UI/UX 設計師</h3>
+                                        <h4>島島阿學 (自主學習平台, Side Project)</h4>
+                                    </div>
+                                    <h4 className='day'>2024/Sep-Now</h4>
+                                </div>
+                                <div className="bottom">
+                                    主在 島島阿學 中，我從產品願景與機會點出發，與 PO 討論並設計改版與新功能，包括：<br></br>
+                                    <ol>
+                                        <li>設計自主學習規劃功能，提升學員目標設定、資源獲取與社群互動體驗，並提高網站流量 109%</li>
+                                        <li>規劃資訊架構，讓不同角色（導師/學員）能直覺理解平台功能</li>
+                                        <li>設計回饋機制，平衡隱私保護與學習交流，促進社群互動</li>
+                                    </ol>
+                       
+                                </div>
+                            </div>
+                            <div className="c"><img src={Teaching} alt="" /></div>
+                        </div>
+                    </div>
                     {/* 2024 */}
                     <div className="lastYear">
                         <div className="frontEnd">
@@ -155,74 +211,17 @@ const about = () => {
                                     <h4 className='day'>2022/Jan-Sep</h4>
                                 </div>
                                 <div className="bottom">
-                                    在 ViewSonic college 中，我主要協助行銷業務相關的社群貼文、活動背板、EDM 電子信與影片剪輯等製作，包括：<br></br>
-
+                                在 ViewSonic college 中，我主要依照行銷業務相關的需求製作產出相關視覺，包括：<br></br>
                                     <ol>
-                                        <li><b>社群媒體製作：</b>負責製作行銷相關的社群貼文，宣傳產品使用方法，也製作活動背板，提供參與者拍照，提升曝光度。</li>
-                                        <li><b>影片剪輯：</b>製作公司頻道的影片，並成功提昇了影片觀看次數 120%。</li>
-                                        <li><b>周邊物設計：</b>根據公司/部門的設計規範，製作口罩、衣服圖樣等周邊物品，提升品牌形象。</li>
-                                    </ol>
-                                    獨立製作過：<br></br>
-                                    <ol>
-                                        <li> 教育科技展：主視覺、活動網頁UI、展覽周邊物，並協助展覽當日活動舉行。</li>
-                                        <li>教師年會：拍照背板、特殊尺寸講座資訊影像，時程表、活動貼紙等，以及協助年會動線引導等。</li>
-                                        <li>創新教育教師獎：頒獎背板、手拿板、獎狀、貼紙等，依照已公布的主視覺，調整活動字體的主題性。</li>
+                                        <li>依據行銷需求製作社群貼文、活動背板與影片，成功提升品牌曝光度與影片觀看次數 120%。</li>
+                                        <li>設計展覽與行銷周邊物（主視覺、活動 UI、頒獎背板等），提升品牌形象與活動識別度</li>
+                                  
                                     </ol>
 
 
                                 </div>
                             </div>
                             <div className="c"><img className='viewsonic' src={Intern} alt="" /></div>
-                        </div>
-                        {/* two */}
-                        <div className="work">
-                            <div className="A"><img src={Teaching} alt="" />
-                                <div className="line"></div>
-                            </div>
-                            <div className="b">
-                                <div className="top_About">
-                                    <div className="title">
-                                        <h3>華語教學實習   </h3>
-                                        <h4>南非德本學校</h4>
-                                    </div>
-                                    <h4 className='day'>2021/Sep-Dec</h4>
-                                </div>
-                                <div className="bottom">
-                                    主要以遠距的方式與南非德本學校的僑生進行華語教學，主要任務包括：<br></br>
-                                    <ol>
-                                        <li>擬定教學計劃</li>
-                                        <li>客製教材與活動</li>
-                                        <li>學生強弱項、活動反應觀察紀錄</li>
-                                    </ol>
-                                    最終達成教學目標，並獲得班導師認同。
-                                </div>
-                            </div>
-                            <div className="c"><img src={Teaching} alt="" /></div>
-                        </div>
-                        {/* three */}
-                        <div className="work">
-                            <div className="A"><img src={Eco} alt="" />
-
-                            </div>
-                            <div className="b">
-                                <div className="top_About">
-                                    <div className="title">
-                                        <h3>Intern </h3>
-                                        <h4>富邦文教基金會-未來自造所</h4>
-                                    </div>
-                                    <h4 className='day'>2018 - 2019</h4>
-                                </div>
-                                <div className="bottom">
-                                    在未來自造所該企劃中習得：<br></br>
-                                    <ol>
-                                        <li>專案企劃發想</li>
-                                        <li>專案製作執行</li>
-                                        <li>行銷相關知識</li>
-                                    </ol>
-                                    並運用學習內容規劃發想綠能企劃專案。
-                                </div>
-                            </div>
-                            <div className="c"><img src={Eco} alt="" /></div>
                         </div>
                     </div>
 

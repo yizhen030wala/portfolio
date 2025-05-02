@@ -8,6 +8,9 @@ import Work1 from '../src/pages/works/work1'
 import Work2 from '../src/pages/works/work2'
 import Work3 from '../src/pages/works/work3'
 import Work4 from '../src/pages/works/work4'
+import Work5 from '../src/pages/works/work5'
+import Work6 from '../src/pages/works/work6'
+import Work7 from '../src/pages/works/work7'
 
 
 import {
@@ -43,6 +46,18 @@ const router = createBrowserRouter([
       {
         path: "/portfolio/viewsonic",
         element: <Work4 />,
+      },
+      {
+        path: "/portfolio/島島阿學",
+        element: <Work5 />,
+      },
+      {
+        path: "/portfolio/X1pro",
+        element: <Work6 />,
+      },
+      {
+        path: "/portfolio/OsteoCloud",
+        element: <Work7 />,
       },
     ]
   },

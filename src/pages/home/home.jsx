@@ -64,8 +64,8 @@ const index = () => {
             </div>
 
             <div className="works_wrap">
-              {/* Project 1 - RETO */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/reto', isProtected)}>
+              {/* Project 1 - OsteoCloud  */}
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/OsteoCloud', isProtected)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
@@ -94,8 +94,8 @@ const index = () => {
                 </div>
               </div>
 
-              {/* Project 2 - Company Project */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/rallway', isProtected)}>
+              {/* Project 2 - X1 Pro */}
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/X1pro', isProtected)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
@@ -122,8 +122,8 @@ const index = () => {
                 </div>
               </div>
 
-              {/* Project 3 - ViewSonic */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/viewsonic', false)}>
+              {/* Project 3 - 島島阿學 */}
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/島島阿學', false)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
