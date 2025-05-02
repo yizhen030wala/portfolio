@@ -47,7 +47,7 @@ import UseTest from '../../assets/images/RETO CH/useTest.png'
 import Change1 from '../../assets/images/RETO CH/change1.png'
 import Change2 from '../../assets/images/RETO CH/change2.png'
 
-const Work1 = () => {
+const Work5 = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -465,4 +465,4 @@ const Work1 = () => {
     )
 }
 
-export default Work1
+export default Work5
