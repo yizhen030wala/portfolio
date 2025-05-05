@@ -12,63 +12,63 @@ $color_black: #1C1B1F;
 // ----------------------------------------------------desktop字體
 @mixin h1_desktop {
     font-weight: 600;
-    font-size: 72px;
+    font-size: 4.5rem;
     margin: 0px;
 }
 
 @mixin h2_desktop {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0px;
 }
 
 @mixin h3_desktop {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0px;
 }
 
 @mixin h4_desktop {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 2rem;
     margin: 0px;
 }
 
 //----------------------------------------------------phone字體
 @mixin h1_phone {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 3rem;
     margin: 0px;
 }
 
 @mixin h2_phone {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0px;
 }
 
 @mixin h3_phone {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0px;
 }
 
 // ----------------------------------------------------body字體
 @mixin h1_body {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0px;
 }
 
 @mixin h2_body {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin: 0px;
 }
 
 @mixin h3_body {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.7rem;
     margin: 0px;
 }
 

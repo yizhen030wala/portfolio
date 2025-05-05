@@ -3,7 +3,7 @@ import Header from '../nav/nav'
 import './about.scss'
 
 // img
-import Me from '../../assets/images/me.png'
+import Me from '../../assets/images/me.jpg'
 import Exchange from '../../assets/images/exchange.png'
 import Eco from '../../assets/images/eco.png'
 import Frontend from '../../assets/images/frontend.png'

@@ -6,7 +6,8 @@ import Footer from '../footer/footer'
 import Download from '../../assets/icon/download.svg'
 import RETO from '../../assets/images/RETO CH/cover3.png'
 import Rallway from '../../assets/images/rallway/cover.png'
-import Vote from '../../assets/images/voting CH/cover.png'
+import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
+// import Vote from '../../assets/images/voting CH/cover.png'
 import ViewSonic from '../../assets/images/viewsonic/viewsonic_01.png'
 import textDesk from '../../assets/images/textDesk.png'
 import textPhone from '../../assets/images/textPhone.png'
@@ -17,7 +18,7 @@ const index = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
-  const isProtected = true; // 定義變數
+  // const isProtected = true; // 定義變數
 
 
   const handlePasswordSubmit = (projectPath) => {
@@ -48,9 +49,12 @@ const index = () => {
                 Hi ! I'm Jenny!<br />
                 A UIUX/Product Designer
               </h1>
-              <div className="slogan">
+              {/* <div className="slogan">
                 <img src={textDesk} alt="喜歡製作有效率和具有美感的產品" className="desktop-text" />
                 <img src={textPhone} alt="喜歡製作有效率和具有美感的產品" className="mobile-text" />
+              </div> */}
+              <div className="slogan_desc">
+                <p>設計對我而言，像是拼湊空白拼圖與畫上色彩的旅程，並從混亂到整合。我擅長在多方角色與模糊需求中釐清脈絡，協助團隊聚焦問題、找到可執行的解法。</p>
               </div>
               <div className="btn_wrap">
                 <a className="btn_black" href={`/portfolio/about`}>
@@ -65,60 +69,57 @@ const index = () => {
 
             <div className="works_wrap">
               {/* Project 1 - OsteoCloud  */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/OsteoCloud', isProtected)}>
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/OsteoCloud')}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
                       <span className="company">柏瑞醫股份有限公司</span>
-                      <h2 className="card_title">OsteoCloud 影像分析平台</h2>
+                      <h2 className="card_title">OsteoCloud 系統優化-提升診所效率與後台洞察力</h2>
                       <span className="date">2025.02 - now</span>
                     </div>
-                    <p className="card_desc">為知名品牌打造的電商平台，包含會員式電商設計、購物車功能和會員系統。</p>
+                    <p className="card_desc">Redesign 診所端操作流程，並協助定義管理邏輯與首頁儀表板指標。</p>
                   </div>
                   <div className="content_bottom">
                     <div className="tag_wrap">
-                      <span className="tag">設計並實現買賣雙方電商界面</span>
-                      <span className="tag">提升移動端購物體驗</span>
-                      <span className="tag">優化購物流程，轉換率提升30%</span>
+                      <span className="tag">B2B</span>
+                      <span className="tag">多角色體驗設計</span>
+                      <span className="tag">資訊架構設計</span>
+                      <span className="tag">設計與商業對齊</span>
+                      <span className="tag">儀表板商業策略</span>
                     </div>
                     <div className="card_button">查看更多</div>
                   </div>
                 </div>
                 <div className="card_image">
                   <img src={RETO} alt="RETO旅藤" />
-                  {isProtected && (
-                    <div className="password_overlay">
-                      <span className="lock_message">需要密碼</span>
-                    </div>
-                  )}
+                  
                 </div>
               </div>
 
               {/* Project 2 - X1 Pro */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/X1pro', isProtected)}>
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/X1pro')}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
                       <span className="company">柏瑞醫股份有限公司</span>
-                      <h2 className="card_title">X1 Pro 放射影像拍攝與分析平台</h2>
-                      <span className="date">2024.06 - 2024.12</span>
+                      <h2 className="card_title">X1 Pro Redesign- 重塑放射師拍攝與資料管理體驗 </h2>
+                      <span className="date">2024.06 - 2025.02</span>
                     </div>
-                    <p className="card_desc">重新設計企業官網，提升品牌形象並優化用戶體驗。</p>
+                    <p className="card_desc">本專案與 PM, RD 合作，針對現有的平台進行全面的使用者體驗優化與介面視覺Redesign。</p>
                   </div>
                   <div className="content_bottom">
                     <div className="tag_wrap">
-                      <span className="tag">品牌視覺設計</span>
-                      <span className="tag">響應式網站設計</span>
-                      <span className="tag">使用者體驗優化</span>
+                      <span className="tag">B2B流程優化</span>
+                      <span className="tag">多角色體驗設計</span>
+                      <span className="tag">資訊架構設計</span>
+                      <span className="tag">醫療產品設計</span><span className="tag">UX策略導入</span>
                     </div>
                     <div className="card_button">查看更多</div>
                   </div>
                 </div>
                 <div className="card_image">
-                  <img src={Rallway} alt="企業形象網站" />
-                  <div className="password_overlay">
-                      <span className="lock_message">需要密碼</span>
-                    </div>
+                  <img src={X1pro} alt="x1pro" />
+    
                 </div>
               </div>
 
@@ -155,13 +156,15 @@ const index = () => {
                       <h2 className="card_title">旅藤-旅遊規劃平台</h2>
                       <span className="date">2023.06 - 2023.12</span>
                     </div>
-                    <p className="card_desc">為知名品牌打造的電商平台，包含會員式電商設計、購物車功能和會員系統。</p>
+                    <p className="card_desc">與團隊共同制定用戶研究、旅程，並制定功能策略，讓用戶能夠輕鬆規劃旅程。</p>
                   </div>
                   <div className="content_bottom">
                     <div className="tag_wrap">
-                      <span className="tag">設計並實現買賣雙方電商界面</span>
-                      <span className="tag">提升移動端購物體驗</span>
-                      <span className="tag">優化購物流程，轉換率提升30%</span>
+                      <span className="tag">介面設計</span>
+                      <span className="tag">原型設計</span>
+                      <span className="tag">設計規範</span>
+                      <span className="tag">前端切版</span>
+                      <span className="tag">團隊溝通</span>
                     </div>
                     <div className="card_button">查看更多</div>
                   </div>

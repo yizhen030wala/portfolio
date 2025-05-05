@@ -5,13 +5,19 @@ import Menu from '../../assets/icon/menu.svg'
 import MenuBox from './menu'
 import {
     NavLink,
+    useNavigate
 } from "react-router-dom";
+import { Drawer } from './drawer';
 
 
 function Header() {
     const [position, setPosition] = useState(window.scrollY)
     // console.log(`position:${position}`);
     const [visible, setVisible] = useState(true)
+    const [isScrolled, setIsScrolled] = useState(false);
+    const navigate = useNavigate();
+    const [drawerOpen, setDrawerOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             let moving = window.scrollY;
@@ -27,8 +33,6 @@ function Header() {
     }, [position]);
 
     const cls = visible ? "visible" : "hidden";
-
-    const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -66,8 +70,8 @@ function Header() {
         <div className={cls}>
             <div className="header" style={headerStyle}>
                 {/* LOGO  */}
-                <a className='logo' href={`/portfolio/`}>
-                    <div className="logo_img"></div>
+                <div className='logo'>
+                    <div className="logo_img" onClick={() => navigate('/portfolio/')}></div>
                     <NavLink 
                         to="/portfolio/" 
                         className={`logo_text ${isScrolled ? 'visible' : ''}`}
@@ -75,7 +79,7 @@ function Header() {
                     >
                         Jenny Chen
                     </NavLink>
-                </a>
+                </div>
 
                 <div className="wrap">
                     {/* 置頂導覽按鈕  */}
@@ -113,24 +117,21 @@ function Header() {
                             </li>
                         </ul>
                     </nav>
-                    {/* nenu  */}
+                    {/* menu  */}
                     <div className="user ">
                         <div className="hover-trigger">
-                            <figure className="menu_box">
+                            <figure className="menu_box" onClick={() => setDrawerOpen(true)}>
                                 <img src={Menu} alt="" />
                             </figure>
                         </div>
                         <div className="popup-content">
-                            <MenuBox />
-
+                            {/* <MenuBox /> */}
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
+            {/* Drawer 側邊欄 */}
+            <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
         </div>
     )
 }

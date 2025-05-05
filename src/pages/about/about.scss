@@ -33,6 +33,7 @@
         font-size: 1.8rem;
     }
 
+
     .intro {
         @include center;
         @include size(100%, 90vh);
@@ -83,7 +84,7 @@
 
             .skill {
                 border-radius: 50px;
-                border: 1px solid $color_deep_gray2;
+                border: 1px solid $color_deep_gray3;
                 padding: 10px 20px;
                 margin-left: 8px;
                 margin-right: 8px;
@@ -326,8 +327,9 @@
     .skills,
     .work_tools,
     .speak {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $color_deep_gray3 ;
         padding: 2rem 0rem;
+    
     }
 
 
@@ -340,9 +342,9 @@
 
             .wrap {
                 @include showFlex_column;
-                width: 100%;
+                width: 110%;
                 height: 100vh;
-
+                padding-top: 18px;
                 .left {
                     height: 50%;
                     width: 90%;
@@ -350,8 +352,8 @@
 
                 .right {
                     height: 50%;
-                    width: 100%;
-
+                    width: 90%;
+                    padding: 30px 0px;
                     p {
                         line-height: 200%;
                         font-size: 14px;
@@ -390,7 +392,7 @@
 
                 .lauange {
                     width: 100% !important;
-
+                    border: 1px solid $color_deep_gray3;
                     h4 {}
                 }
             }
