@@ -7,6 +7,8 @@ import Download from '../../assets/icon/download.svg'
 import RETO from '../../assets/images/RETO CH/cover3.png'
 import Rallway from '../../assets/images/rallway/cover.png'
 import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
+import OsteoCloud from '../../assets/images/OsteoCloud/OsteoCloud_cover.png'
+import DaoDao from '../../assets/images/daodao/daodao_cover.png'
 // import Vote from '../../assets/images/voting CH/cover.png'
 import ViewSonic from '../../assets/images/viewsonic/viewsonic_01.png'
 import textDesk from '../../assets/images/textDesk.png'
@@ -85,13 +87,13 @@ const index = () => {
                       <span className="tag">多角色體驗設計</span>
                       <span className="tag">資訊架構設計</span>
                       <span className="tag">設計與商業對齊</span>
-                      <span className="tag">儀表板商業策略</span>
+                      <span className="tag">儀表板商業指標</span>
                     </div>
                     <div className="card_button">查看更多</div>
                   </div>
                 </div>
                 <div className="card_image">
-                  <img src={RETO} alt="RETO旅藤" />
+                  <img src={OsteoCloud} alt="OsteoCloud" />
                   
                 </div>
               </div>
@@ -124,7 +126,7 @@ const index = () => {
               </div>
 
               {/* Project 3 - 島島阿學 */}
-              <div className="work_card" onClick={() => handleProjectClick('/portfolio/島島阿學', false)}>
+              <div className="work_card" onClick={() => handleProjectClick('/portfolio/daodao', false)}>
                 <div className="card_content">
                   <div className="content_top">
                     <div className="card_header">
@@ -144,7 +146,7 @@ const index = () => {
                   </div>
                 </div>
                 <div className="card_image">
-                  <img src={ViewSonic} alt="ViewSonic作品集" />
+                  <img src={DaoDao} alt="島島阿學" />
                 </div>
               </div>
               {/* Project 4 - RETO */}

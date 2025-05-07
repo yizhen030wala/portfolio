@@ -9,7 +9,8 @@ import Eco from '../../assets/images/eco.png'
 import Frontend from '../../assets/images/frontend.png'
 import Intern from '../../assets/images/intern.png'
 import Teaching from '../../assets/images/teaching.png'
-
+import Biomedica from '../../assets/images/biomedica.jpg'
+import DaoDao from '../../assets/images/daodao.jpg'
 //icon
 import Adobe1 from '../../assets/icon/adobe1.png'
 import Adobe2 from '../../assets/icon/adobe2.png'
@@ -103,7 +104,7 @@ const about = () => {
                     <div className="work_wrap">
                         {/* one */}
                         <div className="work">
-                            <div className="A"><img src={Intern} alt="" />
+                            <div className="A"><img src={Biomedica} alt="" />
                             </div>
                             <div className="b">
                                 <div className="top_About">
@@ -128,11 +129,11 @@ const about = () => {
 
                                 </div>
                             </div>
-                            <div className="c"><img className='viewsonic' src={Intern} alt="" /></div>
+                            <div className="c"><img className='viewsonic' src={Biomedica} alt="" /></div>
                         </div>
                         {/* two */}
                         <div className="work">
-                            <div className="A"><img src={Teaching} alt="" />
+                            <div className="A"><img src={DaoDao} alt="" />
                                 <div className="line"></div>
                             </div>
                             <div className="b">
@@ -144,7 +145,7 @@ const about = () => {
                                     <h4 className='day'>2024/Sep-Now</h4>
                                 </div>
                                 <div className="bottom">
-                                    主在 島島阿學 中，我從產品願景與機會點出發，與 PO 討論並設計改版與新功能，包括：<br></br>
+                                    在 島島阿學 中，我從產品願景與機會點出發，與 PO 討論並設計改版與新功能，包括：<br></br>
                                     <ol>
                                         <li>設計自主學習規劃功能，提升學員目標設定、資源獲取與社群互動體驗，並提高網站流量 109%</li>
                                         <li>規劃資訊架構，讓不同角色（導師/學員）能直覺理解平台功能</li>
@@ -153,7 +154,7 @@ const about = () => {
                        
                                 </div>
                             </div>
-                            <div className="c"><img src={Teaching} alt="" /></div>
+                            <div className="c"><img src={DaoDao} alt="" /></div>
                         </div>
                     </div>
                     {/* 2024 */}

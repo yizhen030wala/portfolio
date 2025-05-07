@@ -8,6 +8,9 @@ import Skeleton from './skeleton'
 
 //img
 import Rallway from '../../assets/images/rallway/cover.png'
+import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
+import OsteoCloud from '../../assets/images/OsteoCloud/OsteoCloud_cover.png'
+import DaoDao from '../../assets/images/daodao/daodao_cover.png'
 // --
 import Branding from '../../assets/images/RETO CH/branding.png'
 import Cover1 from '../../assets/images/RETO CH/cover1.png'
@@ -55,7 +58,7 @@ const Work1 = () => {
         const timer = setTimeout(() => {
             // setVideos(dummyData);
             setLoading(false);
-        }, 3000);
+        }, 2000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -449,16 +452,25 @@ const Work1 = () => {
 
                 </div>
                 <div className="other_project">
-                    <a href={`/portfolio/rallway`} className="next">
-                        <div className="wrap">
-                            <p>下一篇</p>
-                            <h2>台鐵列車動態 redesign </h2>
-                            <p>了解更多</p>
-                        </div>
-                        <figure><img src={Rallway} alt="" /></figure>
+                        
+                        <a href={`/portfolio/daodao`} className="go_back">
+                            <div className="wrap">
+                                <p>上一篇</p>
+                                <h2>島島阿學 Redesign -打造自主學習者的規劃與社群體驗</h2>
+                                <p>了解更多</p>
+                            </div>
+                            <figure><img src={DaoDao} alt="" /></figure>
+                        </a>
+                        <a href={`/portfolio/osteoCloud`} className="next">
+                            <div className="wrap">
+                                <p>下一篇</p>
+                                <h2>OsteoCloud 系統優化-提升診所效率與後台洞察力</h2>
+                                <p>了解更多</p>
+                            </div>
+                            <figure><img src={OsteoCloud} alt="" /></figure>
 
-                    </a>
-                </div>
+                        </a>
+                    </div>
             </main>
             <Footer />
         </div>

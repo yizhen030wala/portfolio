@@ -7,7 +7,8 @@ import Skeleton from './skeleton'
 
 
 //img
-import Rallway from '../../assets/images/rallway/cover.png'
+import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
+import OsteoCloud from '../../assets/images/OsteoCloud/OsteoCloud_article_cover.png'
 // --
 
 
@@ -29,7 +30,7 @@ const Work7 = () => {
         <div>
             {loading && <Skeleton />}
             <Header />
-            <div className="top">
+            <div className="top" style={{ backgroundImage: `url(${OsteoCloud})` }}>
                 <div className="porject_info">
                     <div className="col">
                         <div className="row">
@@ -99,7 +100,7 @@ const Work7 = () => {
                                 <li>❍ <b>提升系統導入彈性與理解力：</b>優化資訊排序與介面表現，讓第一次使用者也能快速上手。</li>
                                 <li>❍ <b>完成診所端流程優化設計：</b>重構產品選擇、資料檢閱流程，提升操作效率並提供用戶錯誤自檢的方式。</li>
                                 <li>❍ <b>定期進行內部認知走查：</b>針對診所端設計，驗證新手用戶是否能清楚理解操作流程，確保學習曲線友善。</li>
-                                <li>❍ <b>協助 PM 制定業務儀表板指標：</b>聚焦用戶活躍、報告分析數量與診所點數週轉率，幫助業務快速掌握客戶經營狀況。%</li>
+                                <li>❍ <b>協助 PM 制定業務儀表板指標：</b>聚焦用戶活躍、報告分析數量與診所點數週轉率，幫助業務快速掌握客戶經營狀況。</li>
                             </ul>
                         </div>
 
@@ -107,13 +108,13 @@ const Work7 = () => {
 
                 </div>
                 <div className="other_project">
-                    <a href={`/portfolio/rallway`} className="next">
+                    <a href={`/portfolio/x1pro`} className="next">
                         <div className="wrap">
                             <p>下一篇</p>
-                            <h2>台鐵列車動態 redesign </h2>
+                            <h2>X1 Pro Redesign- 重塑放射師拍攝與資料管理體驗 </h2>
                             <p>了解更多</p>
                         </div>
-                        <figure><img src={Rallway} alt="" /></figure>
+                        <figure><img src={X1pro} alt="" /></figure>
 
                     </a>
                 </div>

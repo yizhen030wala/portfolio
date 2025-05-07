@@ -9,8 +9,9 @@ import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 
 //img
-import Rallway from '../../assets/images/rallway/cover.png'
-import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
+import X1pro from '../../assets/images/X1pro/X1pro_article_cover.png'
+import OsteoCloud from '../../assets/images/OsteoCloud/OsteoCloud_cover.png'
+import DaoDao from '../../assets/images/daodao/daodao_cover.png'
 import Thanks from '../../assets/images/thanks.gif'
 // X1 Pro images
 import X1pro03 from '../../assets/images/X1pro/X1pro_ppt_03.png'
@@ -59,7 +60,7 @@ const Work6 = () => {
         setLoading(true);
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 2000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -384,13 +385,22 @@ const Work6 = () => {
                         </div>
                     </div>
                     <div className="other_project">
-                        <a href={`/portfolio/rallway`} className="next">
+                        <a href={`/portfolio/osteoCloud`} className="go_back">
                             <div className="wrap">
-                                <p>下一篇</p>
-                                <h2>台鐵列車動態 redesign </h2>
+                                <p>上一篇</p>
+                                <h2>OsteoCloud 系統優化-提升診所效率與後台洞察力</h2>
                                 <p>了解更多</p>
                             </div>
-                            <figure><img src={Rallway} alt="" /></figure>
+                            <figure><img src={OsteoCloud} alt="" /></figure>
+
+                        </a>
+                        <a href={`/portfolio/daodao`} className="next">
+                            <div className="wrap">
+                                <p>下一篇</p>
+                                <h2>島島阿學 Redesign -打造自主學習者的規劃與社群體驗</h2>
+                                <p>了解更多</p>
+                            </div>
+                            <figure><img src={DaoDao} alt="" /></figure>
                         </a>
                     </div>
                 </div>

@@ -15,7 +15,7 @@
 .skills,
 .work_tools,
 .speak {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $color_deep_gray3;
     padding: 2rem 0rem;
 }
 
@@ -81,14 +81,17 @@
             justify-content: start;
             margin-left: -8px;
             margin-right: -8px;
-
+           
             .skill {
                 border-radius: 50px;
-                border: 1px solid $color_deep_gray3;
+                // border: 1px solid $color_deep_gray3;
                 padding: 10px 20px;
                 margin-left: 8px;
                 margin-right: 8px;
                 margin: 8px;
+                background-color: $color_gray;
+                color: $color_deep_gray1;
+    
             }
         }
     }
@@ -122,15 +125,18 @@
             gap: 10px;
 
             .lauange {
-                border: 1px solid;
+                // border: 1px solid;
                 width: calc(100%/3 - 10px);
                 padding: 20px 20px;
                 border-radius: $border_radius_15px;
                 @include showFlex_column;
                 gap: 20px;
+                background-color: $color_gray;
+                color: $color_deep_gray1;
 
                 h2 {
                     font-size: 20px;
+                    color: #000;
                 }
             }
         }
@@ -327,7 +333,7 @@
     .skills,
     .work_tools,
     .speak {
-        border-bottom: 1px solid $color_deep_gray3 ;
+        border-bottom: 1px solid $color_deep_gray3 0.5;
         padding: 2rem 0rem;
     
     }
@@ -392,7 +398,7 @@
 
                 .lauange {
                     width: 100% !important;
-                    border: 1px solid $color_deep_gray3;
+
                     h4 {}
                 }
             }

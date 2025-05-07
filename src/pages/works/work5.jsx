@@ -10,7 +10,7 @@ import Skeleton from './skeleton'
 import Rallway from '../../assets/images/rallway/cover.png'
 // --
 import Branding from '../../assets/images/RETO CH/branding.png'
-// import Cover1 from '../../assets/images/RETO CH/cover1.png'
+import DaoDao from '../../assets/images/daodao/daodao_article_cover.png'
 import Codepen from '../../assets/images/RETO CH/codepen.gif'
 // import Function from '../../assets/images/RETO CH/function.png'
 import Idea1 from '../../assets/images/RETO CH/idea (1).png'
@@ -55,7 +55,7 @@ const Work5 = () => {
         const timer = setTimeout(() => {
             // setVideos(dummyData);
             setLoading(false);
-        }, 3000);
+        }, 2000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -63,7 +63,7 @@ const Work5 = () => {
         <div>
             {loading && <Skeleton />}
             <Header />
-            <div className="top">
+            <div className="top" style={{ backgroundImage: `url(${DaoDao})` }}>
                 <div className="porject_info">
                     <div className="col">
                         <div className="row">
