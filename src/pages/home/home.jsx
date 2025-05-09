@@ -131,16 +131,16 @@ const index = () => {
                   <div className="content_top">
                     <div className="card_header">
                       <span className="company">島島阿學</span>
-                      <h2 className="card_title">島島阿學-學習任務規劃模組</h2>
-                      <span className="date">2022.01 - 2022.09</span>
+                      <h2 className="card_title">島島阿學 Redesign -打造自主學習者的學習規劃體驗</h2>
+                      <span className="date">2024.09 - 2025.02</span>
                     </div>
-                    <p className="card_desc">實習期間完成的各類設計作品，包含品牌設計、行銷物料等。</p>
+                    <p className="card_desc">透過討論與研究資料，提供改版設計功能的發想，並進行原型設計。</p>
                   </div>
                   <div className="content_bottom">
                     <div className="tag_wrap">
-                      <span className="tag">視覺設計</span>
-                      <span className="tag">行銷貼文</span>
-                      <span className="tag">活動UI</span>
+                      <span className="tag">教育產品設計</span>
+                      <span className="tag">研究洞察</span>
+                      <span className="tag">To C 產品</span>
                     </div>
                     <div className="card_button">查看更多</div>
                   </div>
