@@ -3,14 +3,14 @@ import Header from '../nav/nav'
 import './about.scss'
 
 // img
-import Me from '../../assets/images/me.jpg'
+import Me from '../../assets/images/me.JPG'
 import Exchange from '../../assets/images/exchange.png'
 import Eco from '../../assets/images/eco.png'
 import Frontend from '../../assets/images/frontend.png'
 import Intern from '../../assets/images/intern.png'
 import Teaching from '../../assets/images/teaching.png'
-import Biomedica from '../../assets/images/biomedica.jpg'
-import DaoDao from '../../assets/images/daodao.jpg'
+import Biomedica from '../../assets/images/Biomedica.JPG'
+import DaoDao from '../../assets/images/daodao.JPG'
 //icon
 import Adobe1 from '../../assets/icon/adobe1.png'
 import Adobe2 from '../../assets/icon/adobe2.png'
