@@ -10,7 +10,7 @@ import Skeleton from './skeleton'
 import Rallway from '../../assets/images/rallway/cover.png'
 import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
 import OsteoCloud from '../../assets/images/OsteoCloud/OsteoCloud_cover.png'
-import DaoDao from '../../assets/images/daodao/daodao_cover.png'
+import DaoDao from '../../assets/images/daodao/Daodao_cover.png'
 // --
 import Branding from '../../assets/images/RETO CH/branding.png'
 import Cover1 from '../../assets/images/RETO CH/cover1.png'
