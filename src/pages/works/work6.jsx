@@ -125,7 +125,7 @@ const Work6 = () => {
                     <div className="text_wrap">
                         <h2 className="link_title" id='x1pro_1'>🌱概覽</h2>
                         <div className="content_wrap fade-in">
-                            <h2>◾專案背景</h2>
+                            <h2>專案背景</h2>
                             <p>本專案與 PM, RD 合作，針對現有的 X1 Pro <b>放射與醫療影像分析平台</b>進行全面的使用者體驗優化與介面視覺 Redesign 。然而，平台因過去缺乏 UIUX 投入，面臨：</p>
                             <br />
                             <ul>
@@ -150,7 +150,7 @@ const Work6 = () => {
                         </div>
                         <hr />
                         <div className="content_wrap fade-in">
-                            <h2>◾專案成果與影響</h2>
+                            <h2>專案成果與影響</h2>
                             <ul>
                                 <li>❍ 放射師操作流程提升約 <b>44.4%</b>，減少流程斷點</li>
                                 <li>❍ 使用者錯誤自檢率提高、工程支援頻率降低</li>
@@ -170,16 +170,16 @@ const Work6 = () => {
                             }}>
                             <div className="locked-inner">
 
-                                <h2>◾設計流程</h2>
+                                <h2>設計流程</h2>
                                 <img className="fade-in" src={X1pro03} alt="設計流程" />
 
                                 <h2 className="link_title" id='x1pro_2'>🌱研究分析</h2>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾市場分析</h2>
+                                    <h2>市場分析</h2>
                                     <p>我在和 PM 釐清產品特點與目標後，了解到離院篩檢的趨勢，並且作為白牌產品在效能與價格上都具備此優勢，產品除了大型醫院與健檢中心的場域外，也會將<b>偏鄉醫療、居家醫療</b>及小型診所等情境納入使用場域做設計考量。</p>
                                 </div>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾脈絡訪查</h2>
+                                    <h2>脈絡訪查</h2>
                                     <p>為了深入了解放射師的實際工作流程與痛點，我利用展覽的機會，進行了醫療車脈絡訪查，觀察他們在真實工作環境下的操作習慣與遇到的問題。</p>
                                 </div>
                                 <img className="fade-in" src={X1pro04} alt="脈絡訪查" />
@@ -198,7 +198,7 @@ const Work6 = () => {
                                     <p>放射師無法在當下確認影像是否可以進行正確的分析，並補上分析必要的資訊或補拍，導致後續報告的影像容易分析錯誤。</p>
                                 </div>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾Persona</h2>
+                                    <h2>Persona</h2>
                                     <p>通過與 PM 的對談，去了解使用 X1 Pro 平台的不同角色，定義出 Persona，供後續設計時有更明確的方向。</p>
                                     <p>我觀察到，對放射師來說，<b>將準確的影像交付給醫師是最主要的工作</b>，最常遇到的問題是需要手動輸入病患資料，但當下沒有仔細核對的時間，後續細節經常會需要在拍攝結束後，才能夠人工進行核對。</p>
                                     <p>對醫師而言，最核心的工作是<b>迅速取得準確的資料進行診斷判讀</b>。在面對大量影像時，醫師需要流暢、直覺的分析與比對流程，並且能盡快獲得完整報告，以利後續的判讀決定。</p>
@@ -207,7 +207,7 @@ const Work6 = () => {
                                 <img className="fade-in" src={X1pro06} alt="Persona 2" />
 
                                 <div className="content_wrap fade-in">
-                                    <h2>◾競品分析</h2>
+                                    <h2>競品分析</h2>
                                     <p>我透過桌面研究和觀察展場的產品，對市面上主流的醫療影像分析平台進行了競品分析，重點關注其在功能的流程設計、介面視覺風格以及錯誤處理機制等，尋找可借鑒的設計。</p>
                                 </div>
                                 <img className="fade-in" src={X1pro07} alt="競品分析" />
@@ -215,12 +215,12 @@ const Work6 = () => {
 
                                 <h2 className="link_title" id='x1pro_3'>🌱設計發想</h2>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾收斂定義</h2>
+                                    <h2>收斂定義</h2>
                                     <p>在進行設計發想之前，我先進行了收斂定義，將產品目標、使用者需求、競品分析等資訊進行整合，並且將產品目標進行拆解，確保在設計時可以有更明確的方向。</p>
                                 </div>
                                 <img className="fade-in" src={X1pro08} alt="收斂定義" />
                                 <div className="content_wrap fade-in">
-                                    <h2>◾認知走查</h2>
+                                    <h2>認知走查</h2>
                                     <p>作為新加入的設計師，在正式發想新設計之前，我在沒有產品操作說明與目標說明文件的情況下，進行了以「使用者第一視角」進行的認知走查，模擬實際任務操作流程，並紀錄所有流程斷點與認知落差。這份走查不僅幫助我快速理解產品，也成為後續設計重構的重要依據。</p>
                                 </div>
                                 <img className="fade-in" src={X1pro09} alt="認知走查" />
@@ -237,13 +237,13 @@ const Work6 = () => {
 
                                 <h2 className="link_title" id='x1pro_4'>🌱設計方案</h2>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾用戶痛點＆設計方案</h2>
+                                    <h2>用戶痛點＆設計方案</h2>
                                     <p>基於前期的釐清與討論，我針對用戶在使用上如何<b>更有效率</b>、<b>更靈活</b>來提出解法，並製作對應的 Key Frame / Wireframe 做後續討論</p>
                                 </div>
                                 <img className="fade-in" src={X1pro12} alt="用戶痛點" />
                                 <img className="fade-in" src={X1pro13} alt="設計方案" />
                                 <div className="content_wrap fade-in">
-                                    <h2>◾設計解法｜打造放射師資料與拍攝流程升級體驗</h2>
+                                    <h2>設計解法｜打造放射師資料與拍攝流程升級體驗</h2>
                                     <h3>【1｜快速建檔與開拍】</h3>
                                 </div>
                                 <img className="fade-in" src={X1pro14} alt="快速建檔與開拍" />
@@ -275,7 +275,7 @@ const Work6 = () => {
 
                                 <h2 className="link_title" id='x1pro_5'>🌱測試驗證</h2>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾內部定性測試</h2>
+                                    <h2>內部定性測試</h2>
                                     <p>在初版 MVP 完成後，我與業務進行了定性測試，記錄他們在新版設計時的操作流程、遇到的障礙以及潛在的錯誤操作，並了解既有客戶的意見回饋。</p>
                                     <h3>進行方式</h3>
                                     <p><b>測試目標</b></p>
@@ -295,7 +295,7 @@ const Work6 = () => {
                                 </div>
                                 <img className="fade-in" src={X1pro20} alt="測試流程" />
                                 <div className="content_wrap fade-in">
-                                    <h2>◾測試結果＆迭代優化</h2>
+                                    <h2>測試結果＆迭代優化</h2>
                                     <img className="fade-in" src={X1pro21} alt="優化後列表檢視" />
                                     <p>基於測試的反饋，我對設計方案進行了迭代優化，例如調整了部分操作按鈕的位置、優化了錯誤提示的文案等。</p>
                                     <h3>1.快速建檔與開拍</h3>
@@ -337,7 +337,7 @@ const Work6 = () => {
                                 <img className="fade-in" src={X1pro25} alt="優化後跳轉流程" />
                                 <h2 className="link_title" id='x1pro_7'>🌱成果與反思</h2>
                                 <div className="content_wrap fade-in">
-                                    <h2>◾最終成果</h2>
+                                    <h2>最終成果</h2>
                                     <p>本次 X1 Pro 平台的 Redesign 取得的成果：</p>
                                     <ul>
                                         <li>❍ 放射師操作流程提升約 <b>44.4%</b>，減少流程斷點</li>
@@ -348,7 +348,7 @@ const Work6 = () => {
                                 </div>
 
                                 <div className="content_wrap fade-in">
-                                    <h2>◾反思與學習</h2>
+                                    <h2>反思與學習</h2>
                                     <p>這是我第一次設計 B2B 的產品，同時因為醫療產業的特殊性，一開始花了很多時間釐清系統邏輯與權限設定，加上醫院體系的資料傳輸方式特別複雜，也具有很多的限制，讓我在理解整體系統流程時經歷了一段不小的陣痛期。</p>
                                     <br />
                                     <p>但這個過程其實讓我進步很多，從一開始剛加入團隊的迷茫，到逐漸找出自己在設計與溝通上可以發揮的切入點，我盡可能在前期就與 PM、工程師密集討論需求與限制，也同步補齊自己在系統理解上的知識。</p>

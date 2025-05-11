@@ -5,6 +5,8 @@ import './works.scss'
 import { useEffect, useState } from "react";
 import Skeleton from './skeleton'
 
+import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
+import Retos from '../../assets/images/RETO CH/cover2.png'
 //img
 import DaoDao from '../../assets/images/Daodao/Daodao_cover.png'
 import DaoDao03 from '../../assets/images/Daodao/Daodao03.png'
@@ -76,14 +78,14 @@ const Work5 = () => {
                     <a href="#reto_3">研究分析</a>
                     <a href="#reto_4">收斂定義</a>
                     <a href="#reto_5">設計假設與方案</a>
-                    <a href="#reto_6">設計成果與影響</a>
+                    {/* <a href="#reto_6">設計成果與影響</a> */}
                     <a href="#reto_7">反思與學習</a>
                 </div>
                 <div className="port_content">
                     <div className="text_wrap">
                         <h2 className="link_title" id='reto_1'>🌱概覽</h2>
                         <div className="content_wrap fade-in">
-                            <h2>◾專案背景</h2>
+                            <h2>專案背景</h2>
                             <p>島島阿學是一個以推動自主學習為核心的非營利學習平台，早期已累積初步使用者基礎，但缺乏清晰的學習規劃流程與社群互動機制。平台面臨的核心問題為：</p>
                             <ul>
                                 <li>❍ 使用者在初學階段常感到迷茫，缺乏學習路徑引導</li>
@@ -113,7 +115,7 @@ const Work5 = () => {
                         </div>
                         <hr />
                         <div className="content_wrap fade-in">
-                            <h2>◾目前成果</h2>
+                            <h2>目前成果</h2>
                             <ul>
                                 <li>❍ <b>設計「我的小島」學習規劃功能：</b>協助用戶穩定啟動學習並聚焦目標行動，提升學習效率。</li>
                                 <li>❍ <b>優化平台使用體驗：</b>導入學習任務規劃後，平台流量成長 109%，用戶回訪率顯著提升。</li>
@@ -138,19 +140,19 @@ const Work5 = () => {
                         <img className="fade-in" src={DaoDao03} alt="學習生態圈" />
                         <h2 className="link_title" id='reto_3'>🌱研究分析</h2>
                         <div className="content_wrap fade-in">
-                            <h2>◾學習生態圈調查</h2>
+                            <h2>學習生態圈調查</h2>
                             <p>參考團隊中具備教育背景成員對理想學習生態圈的定義，我進一步延伸出對應的使用者角色與場景，作為後續功能設計的核心基礎。</p>
                         </div>
                         <img className="fade-in" src={DaoDao04} alt="學習生態圈" />
 
                         <div className="content_wrap fade-in">
-                            <h2>◾學習旅程</h2>
+                            <h2>學習旅程</h2>
                             <p>透過前期研究資料與學習歷程分析，我們描繪出學習者的關鍵節點與斷裂點，發現學習旅程中出現「收藏堆積 → 啟動困難 → 成果無感 → 放棄」的斷點循環。</p>
                         </div>
                         <img className="fade-in" src={DaoDao05} alt="學習旅程" />
 
                         <div className="content_wrap fade-in">
-                            <h2>◾Persona</h2>
+                            <h2>Persona</h2>
                             <p>過往的島島阿學主要聚焦於自學生社群，但隨著使用族群拓展，團隊也期望能回應體制內高中生在撰寫與執行自主學習計畫上的困難，並協助教師可以做更好的陪伴與引導，讓平台能同時支援學生的學習動機與教師的輔助任務，打造更完整的自主學習支持環境。</p>
                             <p>綜合過往的訪談資料與學習生態圈定義，本次設計將聚焦三種典型是使用者特徵：</p>
                             <ul>
@@ -162,7 +164,7 @@ const Work5 = () => {
                         <img className="fade-in" src={DaoDao06} alt="Persona" />
 
                         <div className="content_wrap fade-in">
-                            <h2>◾共創工作坊</h2>
+                            <h2>共創工作坊</h2>
                             <p>我與 PO 、PM 等透過設計工作坊，與團隊使用 User Story → POV → HMW → 影響力矩陣 等方法釐清目標與優先順序，並決議學習規劃工具將會作為此次活動，讓導師陪伴、討論的重要工具之一。</p>
                             <p>在討論學習規劃工具的過程中，雖然初期意見較為發散，但我逐步聚焦，最終鎖定三大優先場景：</p>
                             <ol>
@@ -175,7 +177,7 @@ const Work5 = () => {
 
                         <h2 className="link_title" id='reto_4'>🌱收斂定義</h2>
                         <div className="content_wrap fade-in">
-                            <h2>◾HMW 問題定義</h2>
+                            <h2>HMW 問題定義</h2>
                             <ul>
                                 <li>❍ 我們如何讓收藏不只是儲存，而能引導學習任務的啟動？</li>
                                 <li>❍ 我們如何協助學習者看見進展與成果，提升持續動力？</li>
@@ -185,12 +187,12 @@ const Work5 = () => {
 
                         <h2 className="link_title" id='reto_5'>🌱設計假設與方案</h2>
                         <div className="content_wrap fade-in">
-                            <h2>◾用戶痛點 ＆ 解決方案</h2>
+                            <h2>用戶痛點 ＆ 解決方案</h2>
                         </div>
                         <img className="fade-in" src={DaoDao09} alt="用戶痛點與解決方案" />
 
                         <div className="content_wrap fade-in">
-                            <h2>◾設計解法</h2>
+                            <h2>設計解法</h2>
                             <h3>【1｜學習規劃功能】</h3>
                             <p><b>問題</b>：用戶難以持續學習、學習資源整合不便</p>
                             <p>我設計了「我的小島」作為使用者的學習基地，將學習任務、資源管理與心得記錄整合於一體。首頁即顯示當日待完成任務，用戶可快速新增學習計畫、心得與代辦事項，避免功能層層跳轉造成的流失，讓操作更貼合真實學習節奏。</p>
@@ -240,7 +242,28 @@ const Work5 = () => {
                             <p>在島島阿學的協作過程中，我也從夥伴的研究與訪談規劃中學到很多，這些經驗讓我之後在推進設計時，可以更有方向地規劃訪談、整合洞察與提出設計策略。</p>
                         </div>
                     </div>
+                    <div className="other_project">
+                        <a href={`/portfolio/x1pro`} className="go_back">
+                            <div className="wrap">
+                                <p>上一篇</p>
+                                <h2>X1 Pro Redesign- 重塑放射師拍攝與資料管理體驗</h2>
+                                <p>了解更多</p>
+                            </div>
+                            <figure><img src={X1pro} alt="" /></figure>
+
+                        </a>
+                        <a href={`/portfolio/retos`} className="next">
+                            <div className="wrap">
+                                <p>下一篇</p>
+                                <h2>旅藤-旅遊規劃平台</h2>
+                                <p>了解更多</p>
+                            </div>
+                            <figure><img src={Retos} alt="" /></figure>
+                        </a>
+                    </div>
                 </div>
+            
+               
             </main>
             <Footer />
         </div>

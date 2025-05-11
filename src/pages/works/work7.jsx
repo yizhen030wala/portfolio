@@ -70,7 +70,7 @@ const Work7 = () => {
                     <div className="text_wrap">
                         <h2 className="link_title" id='x1pro_1'>🌱概覽</h2>
                         <div className="content_wrap fade-in">
-                            <h2>◾專案背景</h2>
+                            <h2>專案背景</h2>
                             <p>OsteoCloud 是一套專為骨質健康管理打造的平台，協助醫療院所進行 AI 影像診斷，同時也提供經銷商與總部管理後台。平台使用者包含醫師、診所管理者、經銷商與公司內部成員，角色複雜、使用需求多元。</p>
 
 
@@ -95,7 +95,7 @@ const Work7 = () => {
                         </div>
                         <hr />
                         <div className="content_wrap fade-in">
-                            <h2>◾目前成果</h2>
+                            <h2>目前成果</h2>
                             <ul>
                                 <li>❍ <b>提升系統導入彈性與理解力：</b>優化資訊排序與介面表現，讓第一次使用者也能快速上手。</li>
                                 <li>❍ <b>完成診所端流程優化設計：</b>重構產品選擇、資料檢閱流程，提升操作效率並提供用戶錯誤自檢的方式。</li>

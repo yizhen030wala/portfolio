@@ -36,11 +36,15 @@ const about = () => {
                         <div className="left"><img src={Me} alt="" /></div>
                         <div className="right">
                             <h2>Hello，我是 Jenny 陳怡臻！</h2>
-                            <p>我擅長在複雜需求與多角色之間釐清核心問題，並用系統性的設計方法，協助團隊聚焦與共識收斂。面對模糊與混亂時，我會先理清資訊、拉出決策節奏，再推動具體行動，這讓我在設計初期特別能穩定團隊。<br></br><br></br>
+                            <p>我擅長在複雜需求與多角色之間釐清核心問題，並用系統性的設計方法，協助團隊聚焦與共識收斂。
+                                面對模糊與混亂時，我會先整理資訊、提出設計策略，再進行具體行動，這讓我在設計初期可以為團隊找到設計節奏。
+                                <br></br><br></br>
 
-                            我相信好的設計不是快速產出介面，而是能真實解決問題、兼顧使用者與商業兩端。在過往 B2B 醫療與教育平台的專案中，我經常結合研究、策略與實務設計，在限制中找到機會，為團隊建立可持續迭代的基礎。<br></br><br></br>
+                            我相信好的設計，可以真實解決問題、兼顧用戶與商業兩端。
+                            在過往 B2B 醫療與教育平台的專案中，我經常結合研究、策略與實務設計，在限制中找到機會，為產品建立可持續迭代的基礎。
+                            <br></br><br></br>
 
-                            對我來說，設計不只是輸出，而是引導與對齊的過程。我樂於傾聽，也善於提出關鍵問題，讓團隊走得更清晰、更穩定。
+                            對我來說，設計不再只是介面輸出，而是引導與對齊的過程。我樂於傾聽，也善於提出關鍵問題，讓團隊走得更清晰、更穩定。
                                 {/* <br></br>
 
                                 短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。 */}
@@ -54,11 +58,13 @@ const about = () => {
                     <div className="skills_wrap">
                         <div className="skill">設計規範</div>
                         <div className="skill">介面視覺設計</div>
+                        <div className="skill">產品使用流程設計</div>
+                        <div className="skill">產品 PRD 撰寫</div>
+                        <div className="skill">團隊協作溝通</div>
                         <div className="skill">貼文設計</div>
                         <div className="skill">角色設計</div>
-                        <div className="skill">團隊協作溝通</div>
                         <div className="skill">動畫</div>
-                        <div className="skill">網頁前端技術(HTML/CSS)</div>
+                        <div className="skill">網頁前端技術(HTML/CSS/React)</div>
                     </div>
                 </div>
                 <div className="work_tools">

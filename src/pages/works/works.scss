@@ -221,9 +221,10 @@ main.portfolio.reto {
         bottom: 50px;
         right: 30px;
         @include showFlex_column;
-        gap: 5px;
+        // gap: 5px;
         opacity: 0.7;
         transition: opacity 0.3s;
+        z-index: 10;
 
         a {
             color: #3D9D35;
@@ -253,7 +254,7 @@ main.portfolio.reto {
 
         .link_title {
             @include link_title;
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 2rem;
             color: $color_deep_gray2;
         }
@@ -262,6 +263,7 @@ main.portfolio.reto {
             color: $color_deep_gray2;
             font-size: 24px;
             margin: 2rem 0 1rem;
+            font-weight: 700;
         }
 
         h3 {
@@ -608,4 +610,198 @@ main.portfolio.reto {
         margin-top: 0.5rem;
     }
 
+}
+
+.works_page {
+    min-height: 100vh;
+    padding: 8vh 10vh;
+    background: $color_white;
+
+    .page_header {
+        margin-bottom: 4rem;
+        text-align: center;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: $color_black;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: $color_deep_gray3;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    }
+
+    .works_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+
+        .work_card {
+            background: $color_white;
+            border-radius: $border_radius_20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            }
+
+            .card_image {
+                width: 100%;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                }
+
+                .password_overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+            .card_content {
+                padding: 1.5rem;
+
+                .card_header {
+                    margin-bottom: 1rem;
+
+                    .company {
+                        font-size: 0.875rem;
+                        color: $color_deep_gray3;
+                        background: $color_gray;
+                        padding: 0.25rem 0.75rem;
+                        border-radius: $border_radius_10px;
+                        display: inline-block;
+                        margin-bottom: 0.75rem;
+                        font-weight: 500;
+                    }
+
+                    .card_title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $color_black;
+                        margin-bottom: 0.5rem;
+                        line-height: 1.4;
+                    }
+
+                    .date {
+                        font-size: 0.875rem;
+                        color: $color_deep_gray3;
+                        border-bottom: 2px solid $color_deep_gray3;
+                        padding-bottom: 0.25rem;
+                        width: fit-content;
+                    }
+                }
+
+                .card_desc {
+                    color: $color_deep_gray3;
+                    line-height: 1.6;
+                    font-size: 0.95rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag_wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    margin-bottom: 1.5rem;
+
+                    .tag {
+                        padding: 0.4rem 0.8rem;
+                        background: $color_gray;
+                        border-radius: $border_radius_10px;
+                        font-size: 0.875rem;
+                        color: $color_deep_gray3;
+                        font-weight: 500;
+                    }
+                }
+
+                .card_button {
+                    display: inline-block;
+                    background: $color_black;
+                    color: $color_white;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: $border_radius_10px;
+                    font-size: 1rem;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    width: 100%;
+                    font-weight: 500;
+
+                    &:hover {
+                        background: $color_deep_gray3;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RWD
+@media screen and (max-width: 1280px) {
+    .works_page {
+        padding: 6vh 5vh;
+
+        .page_header {
+            margin-bottom: 3rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .works_grid {
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .works_page {
+        padding: 4vh 2rem;
+
+        .works_grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .work_card {
+                .card_image {
+                    height: 250px;
+                }
+            }
+        }
+    }
 }
