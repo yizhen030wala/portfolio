@@ -57,7 +57,7 @@ const Work5 = () => {
                         <div className="row">
                             <div className="col text">
                                 <p>專案期間</p>
-                                <h6>2024/11 - 2025/2</h6>
+                                <h6>2024/9 - 2025/2</h6>
                             </div>
                             <div className="col text">
                                 <p>角色</p>
