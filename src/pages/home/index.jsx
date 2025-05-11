@@ -15,8 +15,15 @@ const Index = () => {
 
     return (
         <div>
-            <Loading />
-            <Home showMainContent={showMainContent} />
+            {/* loading 動畫 */}
+            {!showMainContent && <Loading />}
+            {/* Home 一直都在，只是 loading 時隱藏 */}
+            <div style={{
+                opacity: showMainContent ? 1 : 0,
+                transition: 'opacity 0.5s'
+            }}>
+                <Home />
+            </div>
         </div>
     );
 };
