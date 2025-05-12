@@ -235,7 +235,9 @@ const Work1 = () => {
 
                         <h2 className="link_title" id='reto_4'>🌱收斂定義</h2>
                         <p>根據問卷分析結果，我也歸納出三種使用者受眾的輪廓，分別為<b>「隨性懶人」</b>、<b>「規劃新手」</b>、<b>「計畫控」</b>，以及他們可能會使用旅藤的機會點與使用情境。</p>
-                        <img src={Persona} alt="使用者輪廓" />
+                        <img style={{
+                                borderRadius: '2rem',
+                            }} src={Persona} alt="使用者輪廓" />
                         {/* <hr /> */}
                         <div className="content_wrap">
                             <h2>◾設計目標</h2>
@@ -263,7 +265,9 @@ const Work1 = () => {
                             <p>
                                 根據前面的發想與調查後，我們確定產品方向，同時我也說服組員，以目前人力與技術，將產品聚焦在「規劃」功能上，同時確認功能與技術等等是否可行。
                                 <br></br>最終我們決定製作一個web APP的MVP版本，讓資訊閱讀的方式更直覺，編輯旅程可以快速、集中與方便。</p>
-                            <img src={Def} alt="" />
+                            <img style={{
+                                borderRadius: '20px',
+                            }} src={Def} alt="" />
                         </div>
 
 

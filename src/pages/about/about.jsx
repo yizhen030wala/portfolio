@@ -44,13 +44,13 @@ const about = () => {
                     <div className="wrap">
                         <div className="left">
                             {!imageLoaded && <Skeleton height="100%" />}
-                            <img 
-                                src={Me} 
-                                alt="" 
-                                style={{ 
+                            <img
+                                src={Me}
+                                alt=""
+                                style={{
                                     borderRadius: '20px',
                                     display: imageLoaded ? 'block' : 'none'
-                                }} 
+                                }}
                                 onLoad={handleImageLoad}
                             />
                         </div>
@@ -60,11 +60,11 @@ const about = () => {
                                 面對模糊與混亂時，我會先整理資訊、提出設計策略，再進行具體行動，這讓我在設計初期可以為團隊找到設計節奏。
                                 <br></br><br></br>
 
-                            我相信好的設計，可以真實解決問題、兼顧用戶與商業兩端。
-                            在過往 B2B 醫療與教育平台的專案中，我經常結合研究、策略與實務設計，在限制中找到機會，為產品建立可持續迭代的基礎。
-                            <br></br><br></br>
+                                我相信好的設計，可以真實解決問題、兼顧用戶與商業兩端。
+                                在過往 B2B 醫療與教育平台的專案中，我經常結合研究、策略與實務設計，在限制中找到機會，為產品建立可持續迭代的基礎。
+                                <br></br><br></br>
 
-                            對我來說，設計不再只是介面輸出，而是引導與對齊的過程。我樂於傾聽，也善於提出關鍵問題，讓團隊走得更清晰、更穩定。
+                                對我來說，設計不再只是介面輸出，而是引導與對齊的過程。我樂於傾聽，也善於提出關鍵問題，讓團隊走得更清晰、更穩定。
                                 {/* <br></br>
 
                                 短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。 */}
@@ -130,7 +130,10 @@ const about = () => {
                     <div className="work_wrap">
                         {/* one */}
                         <div className="work">
-                            <div className="A"><img src={Biomedica} alt="" />
+                            <div className="A">
+                                <img style={{
+                                borderRadius: '10px',
+                            }} src={Biomedica} alt="" />
                             </div>
                             <div className="b">
                                 <div className="top_About">
@@ -141,7 +144,7 @@ const about = () => {
                                     <h4 className='day'>2024/Jun-Now</h4>
                                 </div>
                                 <div className="bottom">
-                                在 Biomedica 中，我從業務需求、商業模式與用戶體驗出發，設計醫療影像拍攝/分析平台的使用邏輯和架構，包括：<br></br>
+                                    在 Biomedica 中，我從業務需求、商業模式與用戶體驗出發，設計醫療影像拍攝/分析平台的使用邏輯和架構，包括：<br></br>
 
                                     <ol>
                                         <li><b>獨立建立 UI/UX 設計流程與標準化交付，</b>提升跨團隊溝通效率，使設計與開發方向一致。</li>
@@ -150,7 +153,7 @@ const about = () => {
                                         <li><b>使用者研究：</b>透過脈絡訪談、內部 Usability Testing、Prototype 測試，優化影像管理與報告生成功能。</li>
                                         <li><b>團隊協作：</b>和 PM、工程師協作，推動決策透明度，制定產品功能地圖與設計規範。</li>
                                     </ol>
-                                    
+
 
 
                                 </div>
@@ -159,7 +162,9 @@ const about = () => {
                         </div>
                         {/* two */}
                         <div className="work">
-                            <div className="A"><img src={DaoDao} alt="" />
+                            <div className="A"><img style={{
+                                borderRadius: '10px',
+                            }} src={DaoDao} alt="" />
                                 <div className="line"></div>
                             </div>
                             <div className="b">
@@ -177,7 +182,7 @@ const about = () => {
                                         <li>規劃資訊架構，讓不同角色（導師/學員）能直覺理解平台功能</li>
                                         <li>設計回饋機制，平衡隱私保護與學習交流，促進社群互動</li>
                                     </ol>
-                       
+
                                 </div>
                             </div>
                             <div className="c"><img src={DaoDao} alt="" /></div>
@@ -186,7 +191,9 @@ const about = () => {
                     {/* 2024 */}
                     <div className="lastYear">
                         <div className="frontEnd">
-                            <figure className='phone'><img src={Frontend} alt="" /></figure>
+                            <figure className='phone'><img style={{
+                                borderRadius: '10px',
+                            }} src={Frontend} alt="" /></figure>
                             <div className="text">
                                 <h2>互動式前端網頁訓練班</h2>
                                 <h4>2023/Nov-2024/Feb
@@ -203,7 +210,9 @@ const about = () => {
                                 </ol>
                                 透過專題，加強了組件設計的規劃認知與產品規劃邏輯，並了解 React 前端框架建立等概念。
                             </div>
-                            <figure className='desk'><img src={Frontend} alt="" /></figure>
+                            <figure className='desk'><img style={{
+                                borderRadius: '10px',
+                            }} src={Frontend} alt="" /></figure>
                         </div>
                         <div className="korea">
                             <figure><img src={Exchange} alt="" /></figure>
@@ -227,7 +236,9 @@ const about = () => {
                     <div className="work_wrap">
                         {/* one */}
                         <div className="work">
-                            <div className="A"><img src={Intern} alt="" />
+                            <div className="A"><img style={{
+                                borderRadius: '10px',
+                            }} src={Intern} alt="" />
                             </div>
                             <div className="b">
                                 <div className="top_About">
@@ -238,11 +249,11 @@ const about = () => {
                                     <h4 className='day'>2022/Jan-Sep</h4>
                                 </div>
                                 <div className="bottom">
-                                在 ViewSonic college 中，我主要依照行銷業務相關的需求製作產出相關視覺，包括：<br></br>
+                                    在 ViewSonic college 中，我主要依照行銷業務相關的需求製作產出相關視覺，包括：<br></br>
                                     <ol>
                                         <li>依據行銷需求製作社群貼文、活動背板與影片，成功提升品牌曝光度與影片觀看次數 120%。</li>
                                         <li>設計展覽與行銷周邊物（主視覺、活動 UI、頒獎背板等），提升品牌形象與活動識別度</li>
-                                  
+
                                     </ol>
 
 
