@@ -1,0 +1,46 @@
+{
+  "hash": "08614b31",
+  "configHash": "a4e9f26f",
+  "lockfileHash": "845422a8",
+  "browserHash": "3c111a3b",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "3d7ee74e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "bd10c59c",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "389317dd",
+      "needsInterop": false
+    },
+    "react-loading-skeleton": {
+      "src": "../../node_modules/react-loading-skeleton/dist/index.js",
+      "file": "react-loading-skeleton.js",
+      "fileHash": "5e7f889f",
+      "needsInterop": false
+    },
+    "react-before-after-slider-component": {
+      "src": "../../node_modules/react-before-after-slider-component/dist/build.js",
+      "file": "react-before-after-slider-component.js",
+      "fileHash": "69ce4158",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-PWZSRT5W": {
+      "file": "chunk-PWZSRT5W.js"
+    },
+    "chunk-UTEJFLXC": {
+      "file": "chunk-UTEJFLXC.js"
+    }
+  }
+}

@@ -107,11 +107,9 @@ main.portfolio {
         gap: 3rem;
         width: 100%;
 
-
         .go_back,
         .next {
             @include size(50%, 180px);
-            // justify-content: start;
             @include row-center;
             border: none;
             border-radius: $border_radius_15px;
@@ -119,7 +117,6 @@ main.portfolio {
             transition: 0.3s;
             overflow: hidden;
             
-
             &:hover {
                 @include shadow;
 
@@ -127,14 +124,7 @@ main.portfolio {
                     p {
                         color: $color_black;
                     }
-
                 }
-
-                // img {
-                //     width: 130%;
-                //     object-fit: cover;
-                // }
-
             }
 
             .wrap {
@@ -150,22 +140,22 @@ main.portfolio {
                     color: $color_deep_gray3;
                     font-size: 12px;
                 }
-
             }
 
             figure {
                 width: 70%;
                 height: 100%;
-
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
             }
 
             img {
-                width: 150%;
-
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
-
         }
     }
 }
