@@ -10,6 +10,8 @@ import Skeleton from './skeleton'
 import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
 import OsteoCloud from '../../assets/images/OsteoCloud/OsteoCloud_article_cover.png'
 // --
+import OsteoCloud1 from '../../assets/images/OsteoCloud/OsteoCloud-ongoing.png'
+
 
 
 const Work7 = () => {
@@ -103,7 +105,7 @@ const Work7 = () => {
                                 <li>❍ <b>協助 PM 制定業務儀表板指標：</b>聚焦用戶活躍、報告分析數量與診所點數週轉率，幫助業務快速掌握客戶經營狀況。</li>
                             </ul>
                         </div>
-
+                        <img src={OsteoCloud1} alt="ongoing" />
                     </div>
 
                 </div>
