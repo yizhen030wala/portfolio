@@ -1,6 +1,9 @@
 import Footer from '../footer/footer'
 import Header from '../nav/nav'
 import './about.scss'
+import { useState, useEffect } from 'react'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 // img
 import Me from '../../assets/images/me.jpg'
@@ -27,13 +30,30 @@ import Sass from '../../assets/icon/sass.png'
 
 
 const about = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <>
             <Header />
             <div className='about'>
                 <div className="intro">
                     <div className="wrap">
-                        <div className="left"><img src={Me} alt="" /></div>
+                        <div className="left">
+                            {!imageLoaded && <Skeleton height="100%" />}
+                            <img 
+                                src={Me} 
+                                alt="" 
+                                style={{ 
+                                    borderRadius: '20px',
+                                    display: imageLoaded ? 'block' : 'none'
+                                }} 
+                                onLoad={handleImageLoad}
+                            />
+                        </div>
                         <div className="right">
                             <h2>Hello，我是 Jenny 陳怡臻！</h2>
                             <p>我擅長在複雜需求與多角色之間釐清核心問題，並用系統性的設計方法，協助團隊聚焦與共識收斂。

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Skeleton from './skeleton'
 
 import X1pro from '../../assets/images/X1pro/X1pro_cover.png'
-import Retos from '../../assets/images/RETO CH/cover2.png'
+import Retos from '../../assets/images/RETO CH/cover3.png'
 //img
 import DaoDao from '../../assets/images/Daodao/Daodao_cover.png'
 import DaoDao03 from '../../assets/images/Daodao/Daodao03.png'
@@ -87,6 +87,7 @@ const Work5 = () => {
                         <div className="content_wrap fade-in">
                             <h2>專案背景</h2>
                             <p>島島阿學是一個以推動自主學習為核心的非營利學習平台，早期已累積初步使用者基礎，但缺乏清晰的學習規劃流程與社群互動機制。平台面臨的核心問題為：</p>
+                            <br />
                             <ul>
                                 <li>❍ 使用者在初學階段常感到迷茫，缺乏學習路徑引導</li>
                                 <li>❍ 缺少有效的任務規劃與資源整合工具</li>
@@ -105,6 +106,7 @@ const Work5 = () => {
                                 <div className="box">
                                     <h2>03 | 角色與產出</h2>
                                     <p>擔任 UIUX 設計師，我負責以下工作：
+                                    <br />
                                         <li>研究過往訪談資料與使用者行為資料</li>
                                         <li>規劃平台資訊架構</li>
                                         <li>設計自主學習規劃功能與回饋機制</li>
@@ -116,6 +118,7 @@ const Work5 = () => {
                         <hr />
                         <div className="content_wrap fade-in">
                             <h2>目前成果</h2>
+                            <br />
                             <ul>
                                 <li>❍ <b>設計「我的小島」學習規劃功能：</b>協助用戶穩定啟動學習並聚焦目標行動，提升學習效率。</li>
                                 <li>❍ <b>優化平台使用體驗：</b>導入學習任務規劃後，平台流量成長 109%，用戶回訪率顯著提升。</li>
@@ -155,18 +158,21 @@ const Work5 = () => {
                             <h2>Persona</h2>
                             <p>過往的島島阿學主要聚焦於自學生社群，但隨著使用族群拓展，團隊也期望能回應體制內高中生在撰寫與執行自主學習計畫上的困難，並協助教師可以做更好的陪伴與引導，讓平台能同時支援學生的學習動機與教師的輔助任務，打造更完整的自主學習支持環境。</p>
                             <p>綜合過往的訪談資料與學習生態圈定義，本次設計將聚焦三種典型是使用者特徵：</p>
+                            <br />
                             <ul>
-                                <li>❍ 自學新手：自主規劃性低、想學但不知道從哪開始</li>
-                                <li>❍ 書卷獎金卷王：自主規劃性高、熱衷探索學習與制定規劃</li>
-                                <li>❍ 引導者：熱衷分享，需要看見回饋與成果，才有動力持續</li>
+                                <li>❍ <b>自學新手：</b>自主規劃性低、想學但不知道從哪開始</li>
+                                <li>❍ <b>書卷獎金卷王：</b>自主規劃性高、熱衷探索學習與制定規劃</li>
+                                <li>❍ <b>引導者：</b>熱衷分享，需要看見回饋與成果，才有動力持續</li>
                             </ul>
                         </div>
                         <img className="fade-in" src={DaoDao06} alt="Persona" />
 
                         <div className="content_wrap fade-in">
                             <h2>共創工作坊</h2>
-                            <p>我與 PO 、PM 等透過設計工作坊，與團隊使用 User Story → POV → HMW → 影響力矩陣 等方法釐清目標與優先順序，並決議學習規劃工具將會作為此次活動，讓導師陪伴、討論的重要工具之一。</p>
+                            <p>我與 PO 、PM 等透過設計工作坊，與團隊使用 <b>User Story → POV → HMW → 影響力矩陣</b> 等方法釐清目標與優先順序，並決議學習規劃工具將會作為此次活動，讓導師陪伴、討論的重要工具之一。</p>
+                            <br />
                             <p>在討論學習規劃工具的過程中，雖然初期意見較為發散，但我逐步聚焦，最終鎖定三大優先場景：</p>
+                            <br />
                             <ol>
                                 <li>❍ 資源僅能閱覽，無法收藏後做有效使用</li>
                                 <li>❍ 缺乏激勵機制，社群互動動能低，且難以帶來成就感</li>
@@ -178,6 +184,7 @@ const Work5 = () => {
                         <h2 className="link_title" id='reto_4'>🌱收斂定義</h2>
                         <div className="content_wrap fade-in">
                             <h2>HMW 問題定義</h2>
+                            <br />
                             <ul>
                                 <li>❍ 我們如何讓收藏不只是儲存，而能引導學習任務的啟動？</li>
                                 <li>❍ 我們如何協助學習者看見進展與成果，提升持續動力？</li>
@@ -229,6 +236,7 @@ const Work5 = () => {
 
                         <h2 className="link_title" id='reto_6'>🌱設計成果與影響</h2>
                         <div className="content_wrap fade-in">
+                          
                             <ul>
                                 <li>❍ 設計「我的小島」學習規劃 To-do 功能，協助用戶穩定啟動學習並聚焦目標行動</li>
                                 <li>❍ 導入學習任務規劃後，平台流量成長 109%，用戶回訪率顯著提升，驗證初期設計策略有效</li>
@@ -239,6 +247,7 @@ const Work5 = () => {
                         <h2 className="link_title" id='reto_7'>🌱反思與學習</h2>
                         <div className="content_wrap fade-in">
                             <p>這次專案讓我體會到：當產品資訊繁雜、功能不斷擴張時，設計不只是解題者，更是協助團隊聚焦與建立結構的引導者。若缺乏策略聚焦，後續的設計執行往往會陷入反覆與迷茫。</p>
+                            <br />
                             <p>在島島阿學的協作過程中，我也從夥伴的研究與訪談規劃中學到很多，這些經驗讓我之後在推進設計時，可以更有方向地規劃訪談、整合洞察與提出設計策略。</p>
                         </div>
                     </div>
@@ -252,7 +261,7 @@ const Work5 = () => {
                             <figure><img src={X1pro} alt="" /></figure>
 
                         </a>
-                        <a href={`/portfolio/retos`} className="next">
+                        <a href={`/portfolio/reto`} className="next">
                             <div className="wrap">
                                 <p>下一篇</p>
                                 <h2>旅藤-旅遊規劃平台</h2>
